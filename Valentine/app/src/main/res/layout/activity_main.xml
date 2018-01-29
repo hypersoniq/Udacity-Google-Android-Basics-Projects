@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.valentine.MainActivity">
+
+    <!-- Found the image roses.jpg available for public domain use at
+        http://www.publicdomainpictures.net -->
+
+    <ImageView
+        android:src="@drawable/roses"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/first_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:text="Roses are " />
+
+    <TextView
+        android:id="@+id/first_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:layout_toRightOf="@id/first_line"
+        android:fontFamily="sans-serif"
+        android:textColor="#FF0000"
+        android:text="red" />
+
+    <TextView
+        android:id="@+id/second_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/first_color"
+        android:layout_alignRight="@+id/first_color"
+        android:layout_below="@+id/first_line"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Violets are "
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/second_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/second_line"
+        android:layout_below="@id/first_color"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#339FFF"
+        android:text="blue" />
+
+    <TextView
+        android:id="@+id/third_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fourth_line"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:text="On Valentine's Day" />
+
+    <TextView
+        android:id="@+id/fourth_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:layout_marginBottom="20sp"
+        android:layout_toLeftOf="@id/last_color"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:text="This app is for " />
+
+    <TextView
+        android:id="@+id/last_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20sp"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFD700"
+        android:text="you" />
+
+</RelativeLayout>
