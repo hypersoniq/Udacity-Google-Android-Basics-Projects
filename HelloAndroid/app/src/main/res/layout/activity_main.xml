@@ -67,12 +67,14 @@
             android:id="@+id/second_line"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/address"
             android:autoLink="map"
-            android:text="2465 Latham St \nMountain View, CA 94043"
+            android:text="2465 Latham St. Mountain View, CA 94043"
             android:layout_centerHorizontal="true"
             android:clickable="true"
             android:textSize="15sp"
             android:layout_below="@id/first_line"
+            android:gravity="center"
             android:textColorLink="@android:color/black"
             android:textColor="@android:color/black"/>
 
@@ -80,6 +82,7 @@
             android:id="@+id/third_line"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/phone"
             android:autoLink="phone"
             android:text="650-555-5555"
             android:clickable="true"
@@ -87,6 +90,7 @@
             android:textSize="15sp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/second_line"
+            android:gravity="center"
             android:textColorLink="@android:color/black"
             android:textColor="@android:color/black"/>
 
@@ -94,6 +98,7 @@
             android:id="@+id/fourth_line"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/website"
             android:autoLink="web"
             android:text="www.udacity.com"
             android:clickable="true"
@@ -101,6 +106,7 @@
             android:textSize="15sp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/third_line"
+            android:gravity="center"
             android:textColorLink="#1111AA"
             android:textColor="@android:color/black"/>
 
