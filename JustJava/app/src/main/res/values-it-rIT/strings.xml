@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Solo Java</string>
+    <string name="max_cup_msg">Massimo di 100 tazze!</string>
+    <string name="min_cups_msg">Non puoi ordinare tazze negative!</string>
+    <string name="mailTo">mailto:</string>
+    <string name="order_subject">"Solo per Java "</string>
+    <string name="name">"Nome: "</string>
+    <string name="add_cream">"Aggiungi panna montata? "</string>
+    <string name="add_chocolate">Aggiungi cioccolato? </string>
+    <string name="quantity">"Quantità: "</string>
+    <string name="total">Totale: $</string>
+    <string name="thanks">Grazie!</string>
+    <string name="toppings">Condimenti</string>
+    <string name="whipped_cream">Panna montata</string>
+    <string name="chocolate">Cioccolato</string>
+    <string name="quantity_header">Quantità</string>
+    <string name="order">Ordine</string>
+    <string name="hint_name">Nome</string>
+</resources>
