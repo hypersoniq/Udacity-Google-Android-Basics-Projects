@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="text_default">14sp</dimen>
+    <dimen name="text_title">42sp</dimen>
+    <dimen name="text_description">22sp</dimen>
+    <dimen name="separator_height">1dp</dimen>
+    <dimen name="spacing_sm_negative">-8dp</dimen>
+    <dimen name="spacing_med_negative">-16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="logo_width">416dp</dimen>
+    <dimen name="logo_height">416dp</dimen>
+
+</resources>

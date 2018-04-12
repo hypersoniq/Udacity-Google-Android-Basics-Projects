@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="grease">GREASE</string>
+    <string name="tagLine">The Movie Quiz</string>
+    <string name="name_hint">Enter your name:</string>
+    <string name="app_description">"It's been 40 years\nwhat do you remember?"</string>
+
+    <string name="first_text">Who played Rizzo in the movie?</string>
+    <string name="first_choice_1">Carol Channing</string>
+    <string name="first_choice_2">Stockard Channing</string>
+    <string name="first_choice_3">Channing Tatum</string>
+
+    <string name="second_text">A hickey from Kenickie is like...</string>
+    <string name="second_choice_1">a prison tattoo</string>
+    <string name="second_choice_2">a bee sting </string>
+    <string name="second_choice_3">a Hallmark card</string>
+    <string name="second_choice_4">moderate to severe plaque psoriasis</string>
+
+    <string name="third_text">According to Danny Zuko, a car could be Greased Lightning if it has what features? (check all that apply)</string>
+    <string name="third_choice_1">automatic</string>
+    <string name="third_choice_2">programmatic</string>
+    <string name="third_choice_3">systematic</string>
+    <string name="third_choice_4">hydromatic</string>
+
+    <string name="question_4_text">The T-birds rival gang is:</string>
+    <string name="question_4_hint">The</string>
+
+    <string name="fifth_text">What color did a tinting class leave Frenchy\'s hair?</string>
+    <string name="fifth_choice_1">Pink</string>
+    <string name="fifth_choice_2">Green</string>
+    <string name="fifth_choice_3">White</string>
+
+    <string name="get_score">Get Score</string>
+</resources>
