@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.android.businesscard.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".6"
+        android:background="@android:color/black">
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tag_line"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".4"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/first_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_above="@id/second_line"
+            android:layout_centerHorizontal="true"
+            android:text="@string/company_name"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/second_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:autoLink="map"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            android:gravity="center"
+            android:text="@string/address"
+            android:textColor="@android:color/black"
+            android:textColorLink="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/third_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second_line"
+            android:layout_centerHorizontal="true"
+            android:autoLink="phone"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_call_black_24dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/phone"
+            android:textColor="@android:color/black"
+            android:textColorLink="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/fourth_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/third_line"
+            android:layout_centerHorizontal="true"
+            android:autoLink="email"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/email"
+            android:textColor="@android:color/black"
+            android:textColorLink="#1111AA"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

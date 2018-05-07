@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Business Card</string>
+    <string name="tag_line">At the forefront of\n the electric aircraft\n  revolution</string>
+    <string name="company_name">HyperSoniQ\n  Aerospace</string>
+    <string name="phone">843-555-5555</string>
+    <string name="address">Hangar 18\n 2800 Terminal St.\n North Myrtle Beach, SC 29582</string>
+    <string name="email">hypersoniq@comcast.net</string>
+</resources>
