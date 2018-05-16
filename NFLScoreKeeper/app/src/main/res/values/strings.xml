@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">NFL Score Keeper</string>
+    <string name="TD">+6 Touchdown</string>
+    <string name="Safety">+2 Safety/2 pt. Conversion</string>
+    <string name="FG">+3 Field Goal</string>
+    <string name="XP">+1 Extra Point</string>
+    <string name="Reset">Reset</string>
+    <string name="blank"> </string>
+    <string name="team_b">Team B</string>
+    <string name="team_a">Team A</string>
+    />
 </resources>

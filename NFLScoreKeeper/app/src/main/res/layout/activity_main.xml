@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/fb_background">
+    <!-- Image courtesy of Pixabay.com on a Creative Commons free license,
+    no attribution required, but it is a great resource for those who might
+    browse this code on GitHub -->
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -31,7 +33,7 @@
                 android:textColor="#616161"
                 android:textSize="14sp"
                 android:fontFamily="sans-serif-medium"
-                android:text="Team A" />
+                android:text="@string/team_a" />
 
             <TextView
                 android:id="@+id/team_a_score"
@@ -43,51 +45,55 @@
                 android:textColor="#000000"
                 android:textSize="56sp"
                 android:fontFamily="sans-serif-light"
-                android:text="0" />
+                android:text="@string/blank" />
 
             <Button
                 android:id="@+id/btn_touchdownA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:textColor="#FFFFFF"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:background="@drawable/rounded_button"
                 android:onClick="touchdownA"
-                android:text="+6 Touchdown" />
+                android:text="@string/TD"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/btn_safetyA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:textColor="#FFFFFF"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:background="@drawable/rounded_button"
                 android:onClick="safetyA"
-                android:text="+2 Safety/2 pt. Conversion" />
+                android:text="@string/Safety"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/btn_field_goalA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:textColor="#FFFFFF"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:background="@drawable/rounded_button"
                 android:onClick="fieldGoalA"
-                android:text="+3 Field Goal" />
+                android:text="@string/FG"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/btn_extra_pointA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:textColor="#FFFFFF"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:background="@drawable/rounded_button"
                 android:onClick="extraPointA"
-                android:text="+1 Extra Point" />
+                android:text="@string/XP"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
 
         <View
@@ -113,7 +119,7 @@
                 android:textColor="#616161"
                 android:textSize="14sp"
                 android:fontFamily="sans-serif-medium"
-                android:text="Team B" />
+                android:text="@string/team_b" />
 
             <TextView
                 android:id="@+id/team_b_score"
@@ -125,51 +131,55 @@
                 android:textColor="#000000"
                 android:textSize="56sp"
                 android:fontFamily="sans-serif-light"
-                android:text="0" />
+                android:text="@string/blank" />
 
             <Button
                 android:id="@+id/btn_touchdownB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:textColor="#FFFFFF"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:background="@drawable/rounded_button"
                 android:onClick="touchdownB"
-                android:text="+6 Touchdown" />
+                android:text="@string/TD"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/btn_safetyB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:textColor="#FFFFFF"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:background="@drawable/rounded_button"
                 android:onClick="safetyB"
-                android:text="+2 Safety/2 pt. Conversion" />
+                android:text="@string/Safety"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/btn_field_goalB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:textColor="#FFFFFF"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:background="@drawable/rounded_button"
                 android:onClick="fieldGoalB"
-                android:text="+3 Field Goal" />
+                android:text="@string/FG"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/btn_extra_pointB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:textColor="#FFFFFF"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:background="@drawable/rounded_button"
                 android:onClick="extraPointB"
-                android:text="+1 Extra Point" />
+                android:text="@string/XP"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
     </LinearLayout>
 
@@ -180,7 +190,9 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
-        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
         android:onClick="resetScores"
-        android:text="Reset" />
+        android:text="@string/Reset"
+        android:textColor="#FFFFFF" />
+
 </RelativeLayout>

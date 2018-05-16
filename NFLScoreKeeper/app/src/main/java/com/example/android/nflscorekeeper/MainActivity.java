@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        displayForTeamA(scoreA); //initialize to zero
+        displayForTeamB(scoreB); //initialize to zero
     }
 
     /**
