@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
     private int gradeQuestion4(){
-        return ((EditText) findViewById(R.id.question_4_answer)).getText().toString().toLowerCase().equals("scorpions")? 1:0;
+        return ((EditText) findViewById(R.id.question_4_answer)).getText().toString().replace(" ", "").toLowerCase().equals("interrupt")? 1:0;
     }
 
     /**
@@ -100,11 +100,11 @@ public class MainActivity extends AppCompatActivity {
         score += gradeQuestion1() + gradeQuestion2() + gradeQuestion3() + gradeQuestion4() + gradeQuestion5();
         // change toast message based on score
         if (score >= 3){
-            intro = "Congrats ";
+            intro = getString(R.string.good_score);
         } else {
-            intro = "Sorry ";
+            intro = getString(R.string.bad_score);
         }
-        String toastScoreMessage = intro + user_name + "-O,\nYou have " + score + " out of " + questions + " correct.";
+        String toastScoreMessage = intro + " " + user_name + getString(R.string.you_have) + " " + score + " " + getString(R.string.out_of) + " " + questions + " " + getString(R.string.correct);
         // toast results to user
         Toast.makeText(this, toastScoreMessage, Toast.LENGTH_LONG).show();
     }

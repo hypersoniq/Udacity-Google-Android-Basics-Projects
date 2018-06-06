@@ -44,9 +44,9 @@
                     android:layout_marginTop="@dimen/spacing_medium"
                     android:layout_marginBottom="@dimen/spacing_sm_negative"
                     android:gravity="center"
-                    android:text="@string/grease"
+                    android:text="@string/TechQuiz"
                     android:textAllCaps="true"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="@dimen/text_title"
                     />
 
@@ -56,7 +56,7 @@
                     android:gravity="center"
                     android:text="@string/tagLine"
                     android:textAllCaps="true"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="@dimen/text_medium"
                     />
 
@@ -67,7 +67,7 @@
                     android:gravity="center"
                     android:hint="@string/name_hint"
                     android:backgroundTint="@android:color/darker_gray"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="@dimen/text_medium"/>
 
 
@@ -87,7 +87,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/spacing_medium"
                     android:gravity="center"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="@dimen/text_description"
                     android:text="@string/app_description" />
 
@@ -113,26 +113,26 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/first_text"
-                        android:textColor="@android:color/black" />
+                        android:textColor="@android:color/white" />
 
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/first_choice_1"
-                        android:textColor="@android:color/black" />
+                        android:textColor="@android:color/white" />
 
                     <RadioButton
                         android:id="@+id/right_answer_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/first_choice_2"
-                        android:textColor="@android:color/black" />
+                        android:textColor="@android:color/white" />
 
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/first_choice_3"
-                        android:textColor="@android:color/black" />
+                        android:textColor="@android:color/white" />
 
                 </RadioGroup>
 
@@ -149,7 +149,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/spacing_medium"
                     android:text="@string/second_text"
-                    android:textColor="@android:color/black"  />
+                    android:textColor="@android:color/white"  />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -169,26 +169,26 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/second_choice_1"
-                            android:textColor="@android:color/black" />
+                            android:textColor="@android:color/white" />
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/second_choice_2"
-                            android:textColor="@android:color/black" />
+                            android:textColor="@android:color/white" />
 
                         <RadioButton
                             android:id="@+id/right_answer_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/second_choice_3"
-                            android:textColor="@android:color/black" />
+                            android:textColor="@android:color/white" />
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/second_choice_4"
-                            android:textColor="@android:color/black" />
+                            android:textColor="@android:color/white" />
 
                     </RadioGroup>
 
@@ -211,14 +211,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/spacing_small"
-                        android:textColor="@android:color/black"
+                        android:textColor="@android:color/white"
                         android:text="@string/third_text"/>
 
                     <CheckBox
                         android:id="@+id/tc1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@android:color/black"
+                        android:textColor="@android:color/white"
                         android:theme="@style/CheckBox"
                         android:text="@string/third_choice_1"/>
 
@@ -226,7 +226,7 @@
                         android:id="@+id/tc2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@android:color/black"
+                        android:textColor="@android:color/white"
                         android:theme="@style/CheckBox"
                         android:text="@string/third_choice_2"/>
 
@@ -234,7 +234,7 @@
                         android:id="@+id/tc3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@android:color/black"
+                        android:textColor="@android:color/white"
                         android:theme="@style/CheckBox"
                         android:text="@string/third_choice_3"/>
 
@@ -242,7 +242,7 @@
                         android:id="@+id/tc4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@android:color/black"
+                        android:textColor="@android:color/white"
                         android:theme="@style/CheckBox"
                         android:text="@string/third_choice_4"/>
 
@@ -266,7 +266,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="@dimen/spacing_small"
-                        android:textColor="@android:color/black"
+                        android:textColor="@android:color/white"
                         android:text="@string/question_4_text"/>
 
                     <LinearLayout
@@ -278,7 +278,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/spacing_medium"
-                            android:textColor="@android:color/black"
+                            android:textColor="@android:color/white"
                             android:text="@string/question_4_hint"/>
 
                         <EditText
@@ -286,7 +286,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:backgroundTint="@android:color/darker_gray"
-                            android:textColor="@android:color/black"
+                            android:textColor="@android:color/white"
                             android:textSize="@dimen/text_default"
                             android:hint="            "/>
 
@@ -316,26 +316,26 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/fifth_text"
-                                android:textColor="@android:color/black" />
+                                android:textColor="@android:color/white" />
 
                             <RadioButton
                                 android:id="@+id/right_answer_5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/fifth_choice_1"
-                                android:textColor="@android:color/black" />
+                                android:textColor="@android:color/white" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/fifth_choice_2"
-                                android:textColor="@android:color/black" />
+                                android:textColor="@android:color/white" />
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/fifth_choice_3"
-                                android:textColor="@android:color/black" />
+                                android:textColor="@android:color/white" />
 
                         </RadioGroup>
 

@@ -1,34 +1,41 @@
 <resources>
     <string name="app_name">Quiz App</string>
-    <string name="grease">GREASE</string>
-    <string name="tagLine">The Movie Quiz</string>
+    <string name="TechQuiz">Computer Technology</string>
+    <string name="tagLine">A simple quiz</string>
     <string name="name_hint">Enter your name:</string>
-    <string name="app_description">"It's been 40 years\nwhat do you remember?"</string>
+    <string name="app_description">"A quick quiz on computer technology"</string>
 
-    <string name="first_text">Who played Rizzo in the movie?</string>
-    <string name="first_choice_1">Carol Channing</string>
-    <string name="first_choice_2">Stockard Channing</string>
-    <string name="first_choice_3">Channing Tatum</string>
+    <string name="first_text">This is Apple\'s only computer line named for a specific type of apple.</string>
+    <string name="first_choice_1">Granny Smith</string>
+    <string name="first_choice_2">Macintosh</string>
+    <string name="first_choice_3">Red Delicious</string>
 
-    <string name="second_text">A hickey from Kenickie is like...</string>
-    <string name="second_choice_1">a prison tattoo</string>
-    <string name="second_choice_2">a bee sting </string>
-    <string name="second_choice_3">a Hallmark card</string>
-    <string name="second_choice_4">moderate to severe plaque psoriasis</string>
+    <string name="second_text">10 + 3 is equal to this value in hexadecimal...</string>
+    <string name="second_choice_1">15</string>
+    <string name="second_choice_2">13</string>
+    <string name="second_choice_3">D</string>
+    <string name="second_choice_4">1101</string>
 
-    <string name="third_text">According to Danny Zuko, a car could be Greased Lightning if it has what features? (check all that apply)</string>
-    <string name="third_choice_1">automatic</string>
-    <string name="third_choice_2">programmatic</string>
-    <string name="third_choice_3">systematic</string>
-    <string name="third_choice_4">hydromatic</string>
+    <string name="third_text">These Gemstones are also programming languages (check all that apply)</string>
+    <string name="third_choice_1">Jade</string>
+    <string name="third_choice_2">Diamond</string>
+    <string name="third_choice_3">Opal</string>
+    <string name="third_choice_4">Ruby</string>
 
-    <string name="question_4_text">The T-birds rival gang is:</string>
-    <string name="question_4_hint">The</string>
+    <string name="question_4_text">It is the I in IRQ...</string>
+    <string name="question_4_hint">type answer</string>
 
-    <string name="fifth_text">What color did a tinting class leave Frenchy\'s hair?</string>
-    <string name="fifth_choice_1">Pink</string>
-    <string name="fifth_choice_2">Green</string>
-    <string name="fifth_choice_3">White</string>
+    <string name="fifth_text">What is the localhost loopback address?</string>
+    <string name="fifth_choice_1">127.0.0.1</string>
+    <string name="fifth_choice_2">194.118.0.6</string>
+    <string name="fifth_choice_3">100.100.100.1</string>
 
     <string name="get_score">Get Score</string>
+    <string name="good_score">Congratulations</string>
+    <string name="bad_score">Sorry</string>
+    <string name="you_have">,\n You have</string>
+    <string name="out_of">out of</string>
+    <string name="correct">correct.</string>
+
+
 </resources>
