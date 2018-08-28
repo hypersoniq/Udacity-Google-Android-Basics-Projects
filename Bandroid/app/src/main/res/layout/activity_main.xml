@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/black_background"
+android:orientation="vertical"
+tools:context="com.example.android.Bandroid.MainActivity">
+
+<!-- Orange Album -->
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/category_orange">
+
+    <TextView
+        android:id="@+id/orange"
+        style="@style/CategoryStyle"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/category_orange" />
+</FrameLayout>
+
+<!-- Green Album -->
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/category_green">
+
+    <TextView
+        android:id="@+id/green"
+        style="@style/CategoryStyle"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/category_green" />
+</FrameLayout>
+
+<!-- Purple Album -->
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/category_purple">
+
+    <TextView
+        android:id="@+id/purple"
+        style="@style/CategoryStyle"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/category_purple" />
+</FrameLayout>
+
+<!-- Blue Album -->
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/category_blue">
+
+    <TextView
+        android:id="@+id/blue"
+        style="@style/CategoryStyle"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/category_blue" />
+</FrameLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Primary color of the app (shown in the app bar) -->
+    <color name="primary_color">#4161E9</color>
+
+    <!-- Primary dark color of the app (shown in the status bar) -->
+    <color name="primary_dark_color">#191970</color>
+
+    <!-- Background color for app -->
+    <color name="black_background">#000000</color>
+
+    <!-- Background color for the orange album -->
+    <color name="category_orange">#FD8E09</color>
+
+    <!-- Background color for the green album -->
+    <color name="category_green">#379237</color>
+
+    <!-- Background color for the purple album -->
+    <color name="category_purple">#8800A0</color>
+
+    <!-- Background color for the blue album -->
+    <color name="category_blue">#16AFCA</color>
+
+</resources>

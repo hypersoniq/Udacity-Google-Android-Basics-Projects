@@ -1,0 +1,19 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">bAndroid Music Player</string>
+
+    <!-- Category name for the Blue Album -->
+    <string name="category_blue">Blue Album</string>
+
+    <!-- Category name for the Purple Album -->
+    <string name="category_purple">Purple Album</string>
+
+    <!-- Category name for the Orange Album -->
+    <string name="category_orange">Orange Album</string>
+
+    <!-- Category name for the Green Album -->
+    <string name="category_green">Green Album</string>
+
+    <!-- Category name for the Currently Playing Song -->
+    <string name="now_playing">Now Playing</string>
+</resources>
