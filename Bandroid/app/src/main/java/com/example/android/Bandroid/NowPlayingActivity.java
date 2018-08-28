@@ -1,7 +1,7 @@
 package com.example.android.Bandroid;
 
-
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -18,14 +18,13 @@ public class NowPlayingActivity extends AppCompatActivity {
 
         // Get data passed from user click
         Intent input = getIntent();
-        final String songTitleId= input.getStringExtra("curSong");
-        final String artistId= input.getStringExtra("curArtist");
-        final String albumId= input.getStringExtra("curAlbum");
-        final int albumArtId= input.getIntExtra("curArt",1);
+        final String songTitleId = input.getStringExtra("curSong");
+        final String artistId = input.getStringExtra("curArtist");
+        final String albumId = input.getStringExtra("curAlbum");
+        final int albumArtId = input.getIntExtra("curArt", 1);
 
         // Make it a "song" object
         Song songForNow = new Song(albumId, artistId, songTitleId, albumArtId);
-
 
         // Populate the view with the data provided from the intent, but in the form
         // of a Song object.
@@ -61,24 +60,43 @@ public class NowPlayingActivity extends AppCompatActivity {
         // click listener to handle the logic for the "play" ImageView
         // hides the "play" image, shows the "pause" image
         // Displays toast message with "Now Playing " + song title.
-        startImage.setOnClickListener(new View.OnClickListener(){
+        startImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startImage.setVisibility(View.GONE);
                 pauseImage.setVisibility(View.VISIBLE);
-                Toast.makeText(getApplicationContext(), ("Now Playing " + songTitleId), Toast.LENGTH_LONG).show();
+                startImage.setContentDescription(getString(R.string.playing));
+                Toast.makeText(getApplicationContext(), (getString(R.string.playing) + songTitleId), Toast.LENGTH_LONG).show();
             }
         });
 
         // click listener to handle the logic for the "pause" ImageView
         // hides the "pause" image, shows the "play" image
         // Displays toast message with song title + " Paused".
-        pauseImage.setOnClickListener(new View.OnClickListener(){
+        pauseImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startImage.setVisibility(View.VISIBLE);
                 pauseImage.setVisibility(View.GONE);
-                Toast.makeText(getApplicationContext(), (songTitleId + " Paused"), Toast.LENGTH_LONG).show();
+                pauseImage.setContentDescription(getString(R.string.paused));
+                Toast.makeText(getApplicationContext(), (songTitleId + getString(R.string.paused)), Toast.LENGTH_LONG).show();
+            }
+        });
+
+        //Navigation back to the album library.
+        findViewById(R.id.toLibrary).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(NowPlayingActivity.this, com.example.android.Bandroid.MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
+
+        // Navigation back to the album.
+        findViewById(R.id.toAlbum).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //Go back to the album list that the song is from
+                finish();
             }
         });
     }

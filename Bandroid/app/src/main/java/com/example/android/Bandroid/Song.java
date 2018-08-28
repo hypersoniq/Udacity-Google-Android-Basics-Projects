@@ -6,27 +6,37 @@ package com.example.android.Bandroid;
  */
 public class Song {
 
-    /** Album Title */
+    /**
+     * Album Title
+     */
     private String mAlbumTitle;
 
-    /** Artist */
+    /**
+     * Artist
+     */
     private String mArtist;
 
-    /** Song Title */
+    /**
+     * Song Title
+     */
     private String mSongTitle;
 
-    /** Image resource ID for the album cover art */
+    /**
+     * Image resource ID for the album cover art
+     */
     private int mImageResourceId = NO_IMAGE_PROVIDED;
 
-    /** Constant value that represents no image was provided for this word */
+    /**
+     * Constant value that represents no image was provided for this word
+     */
     private static final int NO_IMAGE_PROVIDED = -1;
 
     /**
      * Create a new Word object.
      *
-     * @param albumTitle is the title of the album
-     * @param artist is the artist
-     * @param songTitle is the title of the song
+     * @param albumTitle      is the title of the album
+     * @param artist          is the artist
+     * @param songTitle       is the title of the song
      * @param imageResourceId the resource ID for the image file associated with this album
      */
     public Song(String albumTitle, String artist, String songTitle, int imageResourceId) {
@@ -46,7 +56,8 @@ public class Song {
     /**
      * Get the artist.
      */
-    public String getArtist() { return mArtist;
+    public String getArtist() {
+        return mArtist;
     }
 
     /**

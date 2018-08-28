@@ -6,17 +6,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
 import java.util.ArrayList;
 
 public class OrangeActivity extends AppCompatActivity {
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.song_list);
-
 
         // Create a list of imaginary songs
         final ArrayList<Song> songs = new ArrayList<Song>();
@@ -33,7 +31,7 @@ public class OrangeActivity extends AppCompatActivity {
 
         // Create an {@link SongAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
-       SongAdapter adapter = new SongAdapter(this, songs, R.color.category_orange);
+        SongAdapter adapter = new SongAdapter(this, songs, R.color.category_orange);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
@@ -43,7 +41,6 @@ public class OrangeActivity extends AppCompatActivity {
         // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
         // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
-
 
         // Set a click listener to open the Now Playing activity when the list item is clicked on
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

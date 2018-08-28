@@ -16,4 +16,8 @@
 
     <!-- Category name for the Currently Playing Song -->
     <string name="now_playing">Now Playing</string>
+    <string name="playing">Now Playing : </string>
+    <string name="paused"> : Paused</string>
+    <string name="back_to_library">Back to Library</string>
+    <string name="back_to_album">Back to Album</string>
 </resources>
