@@ -1,4 +1,4 @@
-Thisis a tutorial that is functional but not quite done. It is at the point in the course where they will be introducing (and will incorporate into this app) fragments.
+Completed app including fragments and tabs.
 
 
 Miwok App
