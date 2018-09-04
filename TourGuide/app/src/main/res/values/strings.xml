@@ -1,0 +1,377 @@
+<resources>
+
+    <string name="app_name">Tour Guide</string>
+
+    <!-- Category name for the Shopping tab [CHAR LIMIT=20] -->
+    <string name="category_shopping">Shopping</string>
+
+    <!-- Category name for the Entertainment tab [CHAR LIMIT=20] -->
+    <string name="category_entertainment">Entertainment</string>
+
+    <!-- Category name for the Attractions tab [CHAR LIMIT=20] -->
+    <string name="category_attractions">Attractions</string>
+
+    <!-- Category name for the Dining tab [CHAR LIMIT=20] -->
+    <string name="category_dining">Dining</string>
+
+    <!-- Name for the item entertainment_01 [CHAR LIMIT=20] -->
+    <string name="entertainment_01">Name</string>
+    <!-- Address for the item entertainment_01 [CHAR LIMIT=20] -->
+    <string name="add_ent_01">Address</string>
+    <!-- Phone Number for the item entertainment_01 [CHAR LIMIT=20] -->
+    <string name="pho_ent_01">Phone</string>
+    <!-- website for the item entertainment_01 [CHAR LIMIT=20] -->
+    <string name="web_ent_01">Web</string>
+
+    <!-- Name for the item entertainment_02 [CHAR LIMIT=20] -->
+    <string name="entertainment_02">dusty yellow</string>
+    <!-- Address for the item entertainment_02 [CHAR LIMIT=20] -->
+    <string name="add_ent_02">Address</string>
+    <!-- Phone Number for the item entertainment_02 [CHAR LIMIT=20] -->
+    <string name="pho_ent_02">Phone</string>
+    <!-- website for the item entertainment_02 [CHAR LIMIT=20] -->
+    <string name="web_ent_02">Web</string>
+
+    <!-- Name for the item entertainment_03 [CHAR LIMIT=20] -->
+    <string name="entertainment_03">mustard yellow</string>
+    <!-- Address for the item entertainment_03 [CHAR LIMIT=20] -->
+    <string name="add_ent_03">Address</string>
+    <!-- Phone Number for the item entertainment_03 [CHAR LIMIT=20] -->
+    <string name="pho_ent_03">Phone</string>
+    <!-- website for the item entertainment_03 [CHAR LIMIT=20] -->
+    <string name="web_ent_03">Web</string>
+
+    <!-- Name for the item entertainment_04 [CHAR LIMIT=20] -->
+    <string name="entertainment_04">green</string>
+    <!-- Address for the item entertainment_04 [CHAR LIMIT=20] -->
+    <string name="add_ent_04">Address</string>
+    <!-- Phone Number for the item entertainment_04 [CHAR LIMIT=20] -->
+    <string name="pho_ent_04">Phone</string>
+    <!-- website for the item entertainment_04 [CHAR LIMIT=20] -->
+    <string name="web_ent_04">Web</string>
+
+    <!-- Name for the item entertainment_05 [CHAR LIMIT=20] -->
+    <string name="entertainment_05">brown</string>
+    <!-- Address for the item entertainment_05 [CHAR LIMIT=20] -->
+    <string name="add_ent_05">Address</string>
+    <!-- Phone Number for the item entertainment_05 [CHAR LIMIT=20] -->
+    <string name="pho_ent_05">Phone</string>
+    <!-- website for the item entertainment_05 [CHAR LIMIT=20] -->
+    <string name="web_ent_05">Web</string>
+
+    <!-- Name for the item entertainment_06 [CHAR LIMIT=20] -->
+    <string name="entertainment_06">black</string>
+    <!-- Address for the item entertainment_06 [CHAR LIMIT=20] -->
+    <string name="add_ent_06">Address</string>
+    <!-- Phone Number for the item entertainment_06 [CHAR LIMIT=20] -->
+    <string name="pho_ent_06">Phone</string>
+    <!-- website for the item entertainment_06 [CHAR LIMIT=20] -->
+    <string name="web_ent_06">Web</string>
+
+    <!-- Name for the item entertainment_07 [CHAR LIMIT=20] -->
+    <string name="entertainment_07">gray</string>
+    <!-- Address for the item entertainment_07 [CHAR LIMIT=20] -->
+    <string name="add_ent_07">Address</string>
+    <!-- Phone Number for the item entertainment_07 [CHAR LIMIT=20] -->
+    <string name="pho_ent_07">Phone</string>
+    <!-- website for the item entertainment_07 [CHAR LIMIT=20] -->
+    <string name="web_ent_07">Web</string>
+
+    <!-- Name for the item entertainment_08 [CHAR LIMIT=20] -->
+    <string name="entertainment_08">white</string>
+    <!-- Address for the item entertainment_08 [CHAR LIMIT=20] -->
+    <string name="add_ent_08">Address</string>
+    <!-- Phone Number for the item entertainment_08 [CHAR LIMIT=20] -->
+    <string name="pho_ent_08">Phone</string>
+    <!-- website for the item entertainment_08 [CHAR LIMIT=20] -->
+    <string name="web_ent_08">Web</string>
+
+    <!-- Name for the item entertainment_09 [CHAR LIMIT=20] -->
+    <string name="entertainment_09">whiter</string>
+    <!-- Address for the item entertainment_09 [CHAR LIMIT=20] -->
+    <string name="add_ent_09">Address</string>
+    <!-- Phone Number for the item entertainment_09 [CHAR LIMIT=20] -->
+    <string name="pho_ent_09">Phone</string>
+    <!-- website for the item entertainment_09 [CHAR LIMIT=20] -->
+    <string name="web_ent_09">Web</string>
+
+    <!-- Name for the item entertainment_10 [CHAR LIMIT=20] -->
+    <string name="entertainment_10">whitest</string>
+    <!-- Address for the item entertainment_10 [CHAR LIMIT=20] -->
+    <string name="add_ent_10">Address</string>
+    <!-- Phone Number for the item entertainment_10 [CHAR LIMIT=20] -->
+    <string name="pho_ent_10">Phone</string>
+    <!-- website for the item entertainment_10 [CHAR LIMIT=20] -->
+    <string name="web_ent_10">Web</string>
+
+    <!-- Name for the item attractions_01 [CHAR LIMIT=20] -->
+    <string name="attractions_01">one</string>
+    <!-- Address for the item attractions_01 [CHAR LIMIT=20] -->
+    <string name="add_att_01">Address</string>
+    <!-- Phone Number for the item attractions_01 [CHAR LIMIT=20] -->
+    <string name="pho_aat_01">Phone</string>
+    <!-- website for the item attractions_01 [CHAR LIMIT=20] -->
+    <string name="web_att_01">Web</string>
+
+    <!-- Name for the item attractions_02 [CHAR LIMIT=20] -->
+    <string name="attractions_02">two</string>
+    <!-- Address for the item attractions_02 [CHAR LIMIT=20] -->
+    <string name="add_att_02">Address</string>
+    <!-- Phone Number for the item attractions_02 [CHAR LIMIT=20] -->
+    <string name="pho_aat_02">Phone</string>
+    <!-- website for the item attractions_02 [CHAR LIMIT=20] -->
+    <string name="web_att_02">Web</string>
+
+    <!-- Name for the item attractions_03 [CHAR LIMIT=20] -->
+    <string name="attractions_03">three</string>
+    <!-- Address for the item attractions_03 [CHAR LIMIT=20] -->
+    <string name="add_att_03">Address</string>
+    <!-- Phone Number for the item attractions_03 [CHAR LIMIT=20] -->
+    <string name="pho_aat_03">Phone</string>
+    <!-- website for the item attractions_03 [CHAR LIMIT=20] -->
+    <string name="web_att_03">Web</string>
+
+    <!-- Name for the item attractions_04 [CHAR LIMIT=20] -->
+    <string name="attractions_04">four</string>
+    <!-- Address for the item attractions_04 [CHAR LIMIT=20] -->
+    <string name="add_att_04">Address</string>
+    <!-- Phone Number for the item attractions_04 [CHAR LIMIT=20] -->
+    <string name="pho_aat_04">Phone</string>
+    <!-- website for the item attractions_04 [CHAR LIMIT=20] -->
+    <string name="web_att_04">Web</string>
+
+    <!-- Name for the item attractions_05 [CHAR LIMIT=20] -->
+    <string name="attractions_05">five</string>
+    <!-- Address for the item attractions_05 [CHAR LIMIT=20] -->
+    <string name="add_att_05">Address</string>
+    <!-- Phone Number for the item attractions_05 [CHAR LIMIT=20] -->
+    <string name="pho_aat_05">Phone</string>
+    <!-- website for the item attractions_05 [CHAR LIMIT=20] -->
+    <string name="web_att_05">Web</string>
+
+    <!-- Name for the item attractions_06 [CHAR LIMIT=20] -->
+    <string name="attractions_06">six</string>
+    <!-- Address for the item attractions_06 [CHAR LIMIT=20] -->
+    <string name="add_att_06">Address</string>
+    <!-- Phone Number for the item attractions_06 [CHAR LIMIT=20] -->
+    <string name="pho_aat_06">Phone</string>
+    <!-- website for the item attractions_06 [CHAR LIMIT=20] -->
+    <string name="web_att_06">Web</string>
+
+    <!-- Name for the item attractions_07 [CHAR LIMIT=20] -->
+    <string name="attractions_07">seven</string>
+    <!-- Address for the item attractions_07 [CHAR LIMIT=20] -->
+    <string name="add_att_07">Address</string>
+    <!-- Phone Number for the item attractions_07 [CHAR LIMIT=20] -->
+    <string name="pho_aat_07">Phone</string>
+    <!-- website for the item attractions_07 [CHAR LIMIT=20] -->
+    <string name="web_att_07">Web</string>
+
+    <!-- Name for the item attractions_08 [CHAR LIMIT=20] -->
+    <string name="attractions_08">eight</string>
+    <!-- Address for the item attractions_08 [CHAR LIMIT=20] -->
+    <string name="add_att_08">Address</string>
+    <!-- Phone Number for the item attractions_08 [CHAR LIMIT=20] -->
+    <string name="pho_aat_08">Phone</string>
+    <!-- website for the item attractions_08 [CHAR LIMIT=20] -->
+    <string name="web_att_08">Web</string>
+
+    <!-- Name for the item attractions_09 [CHAR LIMIT=20] -->
+    <string name="attractions_09">nine</string>
+    <!-- Address for the item attractions_09 [CHAR LIMIT=20] -->
+    <string name="add_att_09">Address</string>
+    <!-- Phone Number for the item attractions_09 [CHAR LIMIT=20] -->
+    <string name="pho_aat_09">Phone</string>
+    <!-- website for the item attractions_09 [CHAR LIMIT=20] -->
+    <string name="web_att_09">Web</string>
+
+    <!-- Name for the item attractions_10 [CHAR LIMIT=20] -->
+    <string name="attractions_10">ten</string>
+    <!-- Address for the item attractions_10 [CHAR LIMIT=20] -->
+    <string name="add_att_10">Address</string>
+    <!-- Phone Number for the item attractions_10 [CHAR LIMIT=20] -->
+    <string name="pho_aat_10">Phone</string>
+    <!-- website for the item attractions_10 [CHAR LIMIT=20] -->
+    <string name="web_att_10">Web</string>
+
+    <!-- Name for the item dining_01 [CHAR LIMIT=20] -->
+    <string name="dining_01">father</string>
+    <!-- Address for the item dining_01 [CHAR LIMIT=20] -->
+    <string name="add_din_01">Address</string>
+    <!-- Phone Number for the item dining_01 [CHAR LIMIT=20] -->
+    <string name="pho_din_01">Phone</string>
+    <!-- website for the item dining_01 [CHAR LIMIT=20] -->
+    <string name="web_din_01">Web</string>
+
+    <!-- Name for the item dining_02 [CHAR LIMIT=20] -->
+    <string name="dining_02">mother</string>
+    <!-- Address for the item dining_02 [CHAR LIMIT=20] -->
+    <string name="add_din_02">Address</string>
+    <!-- Phone Number for the item dining_02 [CHAR LIMIT=20] -->
+    <string name="pho_din_02">Phone</string>
+    <!-- website for the item dining_02 [CHAR LIMIT=20] -->
+    <string name="web_din_02">Web</string>
+
+    <!-- Name for the item dining_03 [CHAR LIMIT=20] -->
+    <string name="dining_03">son</string>
+    <!-- Address for the item dining_03 [CHAR LIMIT=20] -->
+    <string name="add_din_03">Address</string>
+    <!-- Phone Number for the item dining_03 [CHAR LIMIT=20] -->
+    <string name="pho_din_03">Phone</string>
+    <!-- website for the item dining_03 [CHAR LIMIT=20] -->
+    <string name="web_din_03">Web</string>
+
+    <!-- Name for the item dining_04 [CHAR LIMIT=20] -->
+    <string name="dining_04">daughter</string>
+    <!-- Address for the item dining_04 [CHAR LIMIT=20] -->
+    <string name="add_din_04">Address</string>
+    <!-- Phone Number for the item dining_04 [CHAR LIMIT=20] -->
+    <string name="pho_din_04">Phone</string>
+    <!-- website for the item dining_04 [CHAR LIMIT=20] -->
+    <string name="web_din_04">Web</string>
+
+    <!-- Name for the item dining_05 [CHAR LIMIT=20] -->
+    <string name="dining_05">older brother</string>
+    <!-- Address for the item dining_05 [CHAR LIMIT=20] -->
+    <string name="add_din_05">Address</string>
+    <!-- Phone Number for the item dining_05 [CHAR LIMIT=20] -->
+    <string name="pho_din_05">Phone</string>
+    <!-- website for the item dining_05 [CHAR LIMIT=20] -->
+    <string name="web_din_05">Web</string>
+
+    <!-- Name for the item dining_06 [CHAR LIMIT=20] -->
+    <string name="dining_06">younger brother</string>
+    <!-- Address for the item dining_06 [CHAR LIMIT=20] -->
+    <string name="add_din_06">Address</string>
+    <!-- Phone Number for the item dining_06 [CHAR LIMIT=20] -->
+    <string name="pho_din_06">Phone</string>
+    <!-- website for the item dining_06 [CHAR LIMIT=20] -->
+    <string name="web_din_06">Web</string>
+
+    <!-- Name for the item dining_07 [CHAR LIMIT=20] -->
+    <string name="dining_07">older sister</string>
+    <!-- Address for the item dining_07 [CHAR LIMIT=20] -->
+    <string name="add_din_07">Address</string>
+    <!-- Phone Number for the item dining_07 [CHAR LIMIT=20] -->
+    <string name="pho_din_07">Phone</string>
+    <!-- website for the item dining_07 [CHAR LIMIT=20] -->
+    <string name="web_din_07">Web</string>
+
+    <!-- Name for the item dining_08 [CHAR LIMIT=20] -->
+    <string name="dining_08">younger sister</string>
+    <!-- Address for the item dining_08 [CHAR LIMIT=20] -->
+    <string name="add_din_08">Address</string>
+    <!-- Phone Number for the item dining_08 [CHAR LIMIT=20] -->
+    <string name="pho_din_08">Phone</string>
+    <!-- website for the item dining_08 [CHAR LIMIT=20] -->
+    <string name="web_din_08">Web</string>
+
+    <!-- Name for the item dining_09 [CHAR LIMIT=20] -->
+    <string name="dining_09">grandmother</string>
+    <!-- Address for the item dining_09 [CHAR LIMIT=20] -->
+    <string name="add_din_09">Address</string>
+    <!-- Phone Number for the item dining_09 [CHAR LIMIT=20] -->
+    <string name="pho_din_09">Phone</string>
+    <!-- website for the item dining_09 [CHAR LIMIT=20] -->
+    <string name="web_din_09">Web</string>
+
+    <!-- Name for the item dining_10 [CHAR LIMIT=20] -->
+    <string name="dining_10">grandfather</string>
+    <!-- Address for the item dining_10 [CHAR LIMIT=20] -->
+    <string name="add_din_10">Address</string>
+    <!-- Phone Number for the item dining_10 [CHAR LIMIT=20] -->
+    <string name="pho_din_10">Phone</string>
+    <!-- website for the item dining_10 [CHAR LIMIT=20] -->
+    <string name="web_din_10">Web</string>
+
+    <!-- Name for the item shopping_01 [CHAR LIMIT=30] -->
+    <string name="shopping_01">Where are you going?</string>
+    <!-- Address for the item shopping_01 [CHAR LIMIT=20] -->
+    <string name="add_sho_01">Address</string>
+    <!-- Phone Number for the item shopping_01 [CHAR LIMIT=20] -->
+    <string name="pho_sho_01">Phone</string>
+    <!-- website for the item shopping_01 [CHAR LIMIT=20] -->
+    <string name="web_sho_01">Web</string>
+
+    <!-- Name for the item shopping_02 [CHAR LIMIT=20] -->
+    <string name="shopping_02">What is your name?</string>
+    <!-- Address for the item shopping_02 [CHAR LIMIT=20] -->
+    <string name="add_sho_02">Address</string>
+    <!-- Phone Number for the item shopping_02 [CHAR LIMIT=20] -->
+    <string name="pho_sho_02">Phone</string>
+    <!-- website for the item shopping_02 [CHAR LIMIT=20] -->
+    <string name="web_sho_02">Web</string>
+
+    <!-- Name for the item shopping_03 [CHAR LIMIT=20] -->
+    <string name="shopping_03">My name is...</string>
+    <!-- Address for the item shopping_03 [CHAR LIMIT=20] -->
+    <string name="add_sho_03">Address</string>
+    <!-- Phone Number for the item shopping_03 [CHAR LIMIT=20] -->
+    <string name="pho_sho_03">Phone</string>
+    <!-- website for the item shopping_03 [CHAR LIMIT=20] -->
+    <string name="web_sho_03">Web</string>
+
+    <!-- Name for the item shopping_04 [CHAR LIMIT=20] -->
+    <string name="shopping_04">How are you feeling?</string>
+    <!-- Address for the item shopping_04 [CHAR LIMIT=20] -->
+    <string name="add_sho_04">Address</string>
+    <!-- Phone Number for the item shopping_04 [CHAR LIMIT=20] -->
+    <string name="pho_sho_04">Phone</string>
+    <!-- website for the item shopping_04 [CHAR LIMIT=20] -->
+    <string name="web_sho_04">Web</string>
+
+    <!-- Name for the item shopping_05 [CHAR LIMIT=20] -->
+    <string name="shopping_05">I\'m feeling good.</string>
+    <!-- Address for the item shopping_05 [CHAR LIMIT=20] -->
+    <string name="add_sho_05">Address</string>
+    <!-- Phone Number for the item shopping_05 [CHAR LIMIT=20] -->
+    <string name="pho_sho_05">Phone</string>
+    <!-- website for the item shopping_05 [CHAR LIMIT=20] -->
+    <string name="web_sho_05">Web</string>
+
+    <!-- Name for the item shopping_06 [CHAR LIMIT=20] -->
+    <string name="shopping_06">Are you coming?</string>
+    <!-- Address for the item shopping_06 [CHAR LIMIT=20] -->
+    <string name="add_sho_06">Address</string>
+    <!-- Phone Number for the item shopping_06 [CHAR LIMIT=20] -->
+    <string name="pho_sho_06">Phone</string>
+    <!-- website for the item shopping_06 [CHAR LIMIT=20] -->
+    <string name="web_sho_06">Web</string>
+
+    <!-- Name for the item shopping_07 [CHAR LIMIT=20] -->
+    <string name="shopping_07">"Yes, I\'m coming."</string>
+    <!-- Address for the item shopping_07 [CHAR LIMIT=20] -->
+    <string name="add_sho_07">Address</string>
+    <!-- Phone Number for the item shopping_07 [CHAR LIMIT=20] -->
+    <string name="pho_sho_07">Phone</string>
+    <!-- website for the item shopping_07 [CHAR LIMIT=20] -->
+    <string name="web_sho_07">Web</string>
+
+    <!-- Name for the item shopping_08 [CHAR LIMIT=20] -->
+    <string name="shopping_08">I\'m coming.</string>
+    <!-- Address for the item shopping_08 [CHAR LIMIT=20] -->
+    <string name="add_sho_08">Address</string>
+    <!-- Phone Number for the item shopping_08 [CHAR LIMIT=20] -->
+    <string name="pho_sho_08">Phone</string>
+    <!-- website for the item shopping_08 [CHAR LIMIT=20] -->
+    <string name="web_sho_08">Web</string>
+
+    <!-- Name for the item shopping_09 [CHAR LIMIT=20] -->
+    <string name="shopping_09">Let\'s go.</string>
+    <!-- Address for the item shopping_09 [CHAR LIMIT=20] -->
+    <string name="add_sho_09">Address</string>
+    <!-- Phone Number for the item shopping_09 [CHAR LIMIT=20] -->
+    <string name="pho_sho_09">Phone</string>
+    <!-- website for the item shopping_09 [CHAR LIMIT=20] -->
+    <string name="web_sho_09">Web</string>
+
+    <!-- Name for the item shopping_10 [CHAR LIMIT=20] -->
+    <string name="shopping_10">Come here.</string>
+    <!-- Address for the item shopping_10 [CHAR LIMIT=20] -->
+    <string name="add_sho_10">Address</string>
+    <!-- Phone Number for the item shopping_10 [CHAR LIMIT=20] -->
+    <string name="pho_sho_10">Phone</string>
+    <!-- website for the item shopping_10 [CHAR LIMIT=20] -->
+    <string name="web_sho_10">Web</string>
+
+</resources>
