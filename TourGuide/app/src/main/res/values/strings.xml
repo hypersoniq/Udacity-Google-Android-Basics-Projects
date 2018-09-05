@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">Tour Guide</string>
+    <string name="app_name">Tour Guide : Myrtle Beach, SC</string>
 
     <!-- Category name for the Shopping tab [CHAR LIMIT=20] -->
     <string name="category_shopping">Shopping</string>
@@ -15,7 +15,7 @@
     <string name="category_dining">Dining</string>
 
     <!-- Name for the item entertainment_01 [CHAR LIMIT=20] -->
-    <string name="entertainment_01">Name</string>
+    <string name="entertainment_01">House Of Blues</string>
     <!-- Address for the item entertainment_01 [CHAR LIMIT=20] -->
     <string name="add_ent_01">Address</string>
     <!-- Phone Number for the item entertainment_01 [CHAR LIMIT=20] -->
@@ -24,36 +24,36 @@
     <string name="web_ent_01">Web</string>
 
     <!-- Name for the item entertainment_02 [CHAR LIMIT=20] -->
-    <string name="entertainment_02">dusty yellow</string>
+    <string name="entertainment_02">Alabama Theater</string>
     <!-- Address for the item entertainment_02 [CHAR LIMIT=20] -->
-    <string name="add_ent_02">Address</string>
+    <string name="add_ent_02">North Myrtle Beach</string>
     <!-- Phone Number for the item entertainment_02 [CHAR LIMIT=20] -->
     <string name="pho_ent_02">Phone</string>
     <!-- website for the item entertainment_02 [CHAR LIMIT=20] -->
     <string name="web_ent_02">Web</string>
 
     <!-- Name for the item entertainment_03 [CHAR LIMIT=20] -->
-    <string name="entertainment_03">mustard yellow</string>
+    <string name="entertainment_03">The Deck (At The House of Blues)</string>
     <!-- Address for the item entertainment_03 [CHAR LIMIT=20] -->
-    <string name="add_ent_03">Address</string>
+    <string name="add_ent_03">North Myrtle Beach</string>
     <!-- Phone Number for the item entertainment_03 [CHAR LIMIT=20] -->
     <string name="pho_ent_03">Phone</string>
     <!-- website for the item entertainment_03 [CHAR LIMIT=20] -->
     <string name="web_ent_03">Web</string>
 
     <!-- Name for the item entertainment_04 [CHAR LIMIT=20] -->
-    <string name="entertainment_04">green</string>
+    <string name="entertainment_04">The Bowery</string>
     <!-- Address for the item entertainment_04 [CHAR LIMIT=20] -->
-    <string name="add_ent_04">Address</string>
+    <string name="add_ent_04">Myrtle Beach</string>
     <!-- Phone Number for the item entertainment_04 [CHAR LIMIT=20] -->
     <string name="pho_ent_04">Phone</string>
     <!-- website for the item entertainment_04 [CHAR LIMIT=20] -->
     <string name="web_ent_04">Web</string>
 
     <!-- Name for the item entertainment_05 [CHAR LIMIT=20] -->
-    <string name="entertainment_05">brown</string>
+    <string name="entertainment_05">The Pirate Dinner Place</string>
     <!-- Address for the item entertainment_05 [CHAR LIMIT=20] -->
-    <string name="add_ent_05">Address</string>
+    <string name="add_ent_05">Myrtle Beach</string>
     <!-- Phone Number for the item entertainment_05 [CHAR LIMIT=20] -->
     <string name="pho_ent_05">Phone</string>
     <!-- website for the item entertainment_05 [CHAR LIMIT=20] -->
@@ -105,29 +105,29 @@
     <string name="web_ent_10">Web</string>
 
     <!-- Name for the item attractions_01 [CHAR LIMIT=20] -->
-    <string name="attractions_01">one</string>
+    <string name="attractions_01">Alligator Adventure</string>
     <!-- Address for the item attractions_01 [CHAR LIMIT=20] -->
-    <string name="add_att_01">Address</string>
+    <string name="add_att_01">North Myrtle Beach</string>
     <!-- Phone Number for the item attractions_01 [CHAR LIMIT=20] -->
-    <string name="pho_aat_01">Phone</string>
+    <string name="pho_att_01">Phone</string>
     <!-- website for the item attractions_01 [CHAR LIMIT=20] -->
     <string name="web_att_01">Web</string>
 
     <!-- Name for the item attractions_02 [CHAR LIMIT=20] -->
-    <string name="attractions_02">two</string>
+    <string name="attractions_02">WonderWorks</string>
     <!-- Address for the item attractions_02 [CHAR LIMIT=20] -->
-    <string name="add_att_02">Address</string>
+    <string name="add_att_02">Myrtle Beach</string>
     <!-- Phone Number for the item attractions_02 [CHAR LIMIT=20] -->
-    <string name="pho_aat_02">Phone</string>
+    <string name="pho_att_02">Phone</string>
     <!-- website for the item attractions_02 [CHAR LIMIT=20] -->
     <string name="web_att_02">Web</string>
 
     <!-- Name for the item attractions_03 [CHAR LIMIT=20] -->
-    <string name="attractions_03">three</string>
+    <string name="attractions_03">Ripley\'s Escape Room</string>
     <!-- Address for the item attractions_03 [CHAR LIMIT=20] -->
-    <string name="add_att_03">Address</string>
+    <string name="add_att_03">Myrtle Beach</string>
     <!-- Phone Number for the item attractions_03 [CHAR LIMIT=20] -->
-    <string name="pho_aat_03">Phone</string>
+    <string name="pho_att_03">Phone</string>
     <!-- website for the item attractions_03 [CHAR LIMIT=20] -->
     <string name="web_att_03">Web</string>
 
@@ -136,7 +136,7 @@
     <!-- Address for the item attractions_04 [CHAR LIMIT=20] -->
     <string name="add_att_04">Address</string>
     <!-- Phone Number for the item attractions_04 [CHAR LIMIT=20] -->
-    <string name="pho_aat_04">Phone</string>
+    <string name="pho_att_04">Phone</string>
     <!-- website for the item attractions_04 [CHAR LIMIT=20] -->
     <string name="web_att_04">Web</string>
 
@@ -145,7 +145,7 @@
     <!-- Address for the item attractions_05 [CHAR LIMIT=20] -->
     <string name="add_att_05">Address</string>
     <!-- Phone Number for the item attractions_05 [CHAR LIMIT=20] -->
-    <string name="pho_aat_05">Phone</string>
+    <string name="pho_att_05">Phone</string>
     <!-- website for the item attractions_05 [CHAR LIMIT=20] -->
     <string name="web_att_05">Web</string>
 
@@ -154,7 +154,7 @@
     <!-- Address for the item attractions_06 [CHAR LIMIT=20] -->
     <string name="add_att_06">Address</string>
     <!-- Phone Number for the item attractions_06 [CHAR LIMIT=20] -->
-    <string name="pho_aat_06">Phone</string>
+    <string name="pho_att_06">Phone</string>
     <!-- website for the item attractions_06 [CHAR LIMIT=20] -->
     <string name="web_att_06">Web</string>
 
@@ -163,7 +163,7 @@
     <!-- Address for the item attractions_07 [CHAR LIMIT=20] -->
     <string name="add_att_07">Address</string>
     <!-- Phone Number for the item attractions_07 [CHAR LIMIT=20] -->
-    <string name="pho_aat_07">Phone</string>
+    <string name="pho_att_07">Phone</string>
     <!-- website for the item attractions_07 [CHAR LIMIT=20] -->
     <string name="web_att_07">Web</string>
 
@@ -172,7 +172,7 @@
     <!-- Address for the item attractions_08 [CHAR LIMIT=20] -->
     <string name="add_att_08">Address</string>
     <!-- Phone Number for the item attractions_08 [CHAR LIMIT=20] -->
-    <string name="pho_aat_08">Phone</string>
+    <string name="pho_att_08">Phone</string>
     <!-- website for the item attractions_08 [CHAR LIMIT=20] -->
     <string name="web_att_08">Web</string>
 
@@ -181,7 +181,7 @@
     <!-- Address for the item attractions_09 [CHAR LIMIT=20] -->
     <string name="add_att_09">Address</string>
     <!-- Phone Number for the item attractions_09 [CHAR LIMIT=20] -->
-    <string name="pho_aat_09">Phone</string>
+    <string name="pho_att_09">Phone</string>
     <!-- website for the item attractions_09 [CHAR LIMIT=20] -->
     <string name="web_att_09">Web</string>
 
@@ -190,14 +190,14 @@
     <!-- Address for the item attractions_10 [CHAR LIMIT=20] -->
     <string name="add_att_10">Address</string>
     <!-- Phone Number for the item attractions_10 [CHAR LIMIT=20] -->
-    <string name="pho_aat_10">Phone</string>
+    <string name="pho_att_10">Phone</string>
     <!-- website for the item attractions_10 [CHAR LIMIT=20] -->
     <string name="web_att_10">Web</string>
 
     <!-- Name for the item dining_01 [CHAR LIMIT=20] -->
-    <string name="dining_01">father</string>
+    <string name="dining_01">Dick\'s Last Resort</string>
     <!-- Address for the item dining_01 [CHAR LIMIT=20] -->
-    <string name="add_din_01">Address</string>
+    <string name="add_din_01">North Myrtle Beach</string>
     <!-- Phone Number for the item dining_01 [CHAR LIMIT=20] -->
     <string name="pho_din_01">Phone</string>
     <!-- website for the item dining_01 [CHAR LIMIT=20] -->
@@ -285,27 +285,27 @@
     <string name="web_din_10">Web</string>
 
     <!-- Name for the item shopping_01 [CHAR LIMIT=30] -->
-    <string name="shopping_01">Where are you going?</string>
+    <string name="shopping_01">Tanger Outlets</string>
     <!-- Address for the item shopping_01 [CHAR LIMIT=20] -->
-    <string name="add_sho_01">Address</string>
+    <string name="add_sho_01">North Myrtle Beach</string>
     <!-- Phone Number for the item shopping_01 [CHAR LIMIT=20] -->
     <string name="pho_sho_01">Phone</string>
     <!-- website for the item shopping_01 [CHAR LIMIT=20] -->
     <string name="web_sho_01">Web</string>
 
     <!-- Name for the item shopping_02 [CHAR LIMIT=20] -->
-    <string name="shopping_02">What is your name?</string>
+    <string name="shopping_02">Coastal Grand Mall</string>
     <!-- Address for the item shopping_02 [CHAR LIMIT=20] -->
-    <string name="add_sho_02">Address</string>
+    <string name="add_sho_02">Myrtle Beach</string>
     <!-- Phone Number for the item shopping_02 [CHAR LIMIT=20] -->
     <string name="pho_sho_02">Phone</string>
     <!-- website for the item shopping_02 [CHAR LIMIT=20] -->
     <string name="web_sho_02">Web</string>
 
     <!-- Name for the item shopping_03 [CHAR LIMIT=20] -->
-    <string name="shopping_03">My name is...</string>
+    <string name="shopping_03">Piggly Wiggly</string>
     <!-- Address for the item shopping_03 [CHAR LIMIT=20] -->
-    <string name="add_sho_03">Address</string>
+    <string name="add_sho_03">Myrtle Beach</string>
     <!-- Phone Number for the item shopping_03 [CHAR LIMIT=20] -->
     <string name="pho_sho_03">Phone</string>
     <!-- website for the item shopping_03 [CHAR LIMIT=20] -->
@@ -373,5 +373,12 @@
     <string name="pho_sho_10">Phone</string>
     <!-- website for the item shopping_10 [CHAR LIMIT=20] -->
     <string name="web_sho_10">Web</string>
+    <string name="address">Address</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="website">Website</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

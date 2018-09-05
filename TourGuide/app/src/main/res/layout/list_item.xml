@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/list_item_height"
-    android:background="@color/tan_background"
+    android:background="@color/gray_background"
     android:minHeight="@dimen/list_item_height">
 
     <ImageView
@@ -30,7 +30,7 @@
             android:layout_weight="1"
             android:gravity="bottom"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textStyle="bold"
             tools:text="Name" />
 
@@ -41,8 +41,8 @@
             android:layout_below="@id/name_text_view"
             android:layout_weight="1"
             android:gravity="top"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/black"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@android:color/white"
             tools:text="Location" />
     </RelativeLayout>
 </RelativeLayout>
