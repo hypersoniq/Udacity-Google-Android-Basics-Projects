@@ -9,8 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
-
 import java.util.ArrayList;
 
 /**
@@ -30,25 +28,25 @@ public class DiningFragment extends Fragment {
         // Create a list of points of interest for this category
         final ArrayList<PointOfInterest> pointsOfInterest = new ArrayList<PointOfInterest>();
         pointsOfInterest.add(new PointOfInterest(R.string.dining_01, R.string.add_din_01,
-                R.string.pho_din_01, R.string.web_din_01, R.drawable.dining_001));
+                R.string.pho_din_01, R.string.web_din_01, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.dining_02, R.string.add_din_02,
                 R.string.pho_din_02, R.string.web_din_02, R.drawable.dining_002));
         pointsOfInterest.add(new PointOfInterest(R.string.dining_03, R.string.add_din_03,
-                R.string.pho_din_03, R.string.web_din_03, R.drawable.dining_003));
+                R.string.pho_din_03, R.string.web_din_03, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.dining_04, R.string.add_din_04,
-                R.string.pho_din_04, R.string.web_din_04, R.drawable.dining_004));
+                R.string.pho_din_04, R.string.web_din_04, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.dining_05, R.string.add_din_05,
-                R.string.pho_din_05, R.string.web_din_05, R.drawable.dining_005));
+                R.string.pho_din_05, R.string.web_din_05, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.dining_06, R.string.add_din_06,
-                R.string.pho_din_06, R.string.web_din_06, R.drawable.dining_006));
+                R.string.pho_din_06, R.string.web_din_06, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.dining_07, R.string.add_din_07,
-                R.string.pho_din_07, R.string.web_din_07, R.drawable.dining_007));
+                R.string.pho_din_07, R.string.web_din_07, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.dining_08, R.string.add_din_08,
-                R.string.pho_din_08, R.string.web_din_08, R.drawable.dining_008));
+                R.string.pho_din_08, R.string.web_din_08, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.dining_09, R.string.add_din_09,
-                R.string.pho_din_09, R.string.web_din_09, R.drawable.dining_009));
+                R.string.pho_din_09, R.string.web_din_09, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.dining_10, R.string.add_din_10,
-                R.string.pho_din_10, R.string.web_din_10, R.drawable.dining_010));
+                R.string.pho_din_10, R.string.web_din_10, R.drawable.ph));
 
         // Create an {@link PointOfInterestAdapter}, whose data source is a list of {@link PointOfInterest}s. The
         // adapter knows how to create list items for each item in the list.
@@ -78,11 +76,11 @@ public class DiningFragment extends Fragment {
                 int currentPhone = Poi.getPointOfInterestPhone();
                 int currentWebsite = Poi.getPointOfInterestWeb();
                 int currentImage = Poi.getImageResourceId();
-                poiIntent.putExtra("curName", currentName);
-                poiIntent.putExtra("curAddress", currentAddress);
-                poiIntent.putExtra("curPhone", currentPhone);
-                poiIntent.putExtra("curWebsite", currentWebsite);
-                poiIntent.putExtra("curImage", currentImage);
+                poiIntent.putExtra(getString(R.string.cName), currentName);
+                poiIntent.putExtra(getString(R.string.cAddress), currentAddress);
+                poiIntent.putExtra(getString(R.string.cPhone), currentPhone);
+                poiIntent.putExtra(getString(R.string.cWeb), currentWebsite);
+                poiIntent.putExtra(getString(R.string.cImg), currentImage);
                 // Start the new activity
                 startActivity(poiIntent);
 

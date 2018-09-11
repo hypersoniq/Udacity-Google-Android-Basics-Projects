@@ -28,21 +28,21 @@ public class AttractionsFragment extends Fragment {
         // Create a list of points of interest for this category
         final ArrayList<PointOfInterest> pointsOfInterest = new ArrayList<PointOfInterest>();
         pointsOfInterest.add(new PointOfInterest(R.string.attractions_01, R.string.add_att_01,
-                R.string.pho_att_01, R.string.web_att_01, R.drawable.attractions_001));
+                R.string.pho_att_01, R.string.web_att_01, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.attractions_02, R.string.add_att_02,
-                R.string.pho_att_02, R.string.web_att_02, R.drawable.attractions_002));
+                R.string.pho_att_02, R.string.web_att_02, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.attractions_03, R.string.add_att_03,
-                R.string.pho_att_03, R.string.web_att_03, R.drawable.attractions_003));
+                R.string.pho_att_03, R.string.web_att_03, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.attractions_04, R.string.add_att_04,
-                R.string.pho_att_04, R.string.web_att_04, R.drawable.attractions_004));
+                R.string.pho_att_04, R.string.web_att_04, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.attractions_05, R.string.add_att_05,
                 R.string.pho_att_05, R.string.web_att_05, R.drawable.attractions_005));
         pointsOfInterest.add(new PointOfInterest(R.string.attractions_06, R.string.add_att_06,
-                R.string.pho_att_06, R.string.web_att_06, R.drawable.attractions_006));
+                R.string.pho_att_06, R.string.web_att_06, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.attractions_07, R.string.add_att_07,
-                R.string.pho_att_07, R.string.web_att_07, R.drawable.attractions_007));
+                R.string.pho_att_07, R.string.web_att_07, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.attractions_08, R.string.add_att_08,
-                R.string.pho_att_08, R.string.web_att_08, R.drawable.attractions_008));
+                R.string.pho_att_08, R.string.web_att_08, R.drawable.ph));
 
         // Create an {@link PointOfInterestAdapter}, whose data source is a list of {@link PointOfInterest}s. The
         // adapter knows how to create list items for each item in the list.
@@ -72,11 +72,11 @@ public class AttractionsFragment extends Fragment {
                 int currentPhone = Poi.getPointOfInterestPhone();
                 int currentWebsite = Poi.getPointOfInterestWeb();
                 int currentImage = Poi.getImageResourceId();
-                poiIntent.putExtra("curName", currentName);
-                poiIntent.putExtra("curAddress", currentAddress);
-                poiIntent.putExtra("curPhone", currentPhone);
-                poiIntent.putExtra("curWebsite", currentWebsite);
-                poiIntent.putExtra("curImage", currentImage);
+                poiIntent.putExtra(getString(R.string.cName), currentName);
+                poiIntent.putExtra(getString(R.string.cAddress), currentAddress);
+                poiIntent.putExtra(getString(R.string.cPhone), currentPhone);
+                poiIntent.putExtra(getString(R.string.cWeb), currentWebsite);
+                poiIntent.putExtra(getString(R.string.cImg), currentImage);
                 // Start the new activity
                 startActivity(poiIntent);
 

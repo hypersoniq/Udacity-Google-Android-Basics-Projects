@@ -9,8 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
-
 import java.util.ArrayList;
 
 /**
@@ -30,25 +28,25 @@ public class ShoppingFragment extends Fragment {
         // Create a list of points of interest for this category
         final ArrayList<PointOfInterest> pointsOfInterest = new ArrayList<PointOfInterest>();
         pointsOfInterest.add(new PointOfInterest(R.string.shopping_01, R.string.add_sho_01,
-                R.string.pho_sho_01, R.string.web_sho_01, R.drawable.shopping_001));
+                R.string.pho_sho_01, R.string.web_sho_01, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.shopping_02, R.string.add_sho_02,
-                R.string.pho_sho_02, R.string.web_sho_02, R.drawable.shopping_002));
+                R.string.pho_sho_02, R.string.web_sho_02, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.shopping_03, R.string.add_sho_03,
-                R.string.pho_sho_03, R.string.web_sho_03, R.drawable.shopping_003));
+                R.string.pho_sho_03, R.string.web_sho_03, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.shopping_04, R.string.add_sho_04,
-                R.string.pho_sho_04, R.string.web_sho_04, R.drawable.shopping_004));
+                R.string.pho_sho_04, R.string.web_sho_04, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.shopping_05, R.string.add_sho_05,
-                R.string.pho_sho_05, R.string.web_sho_05, R.drawable.shopping_005));
+                R.string.pho_sho_05, R.string.web_sho_05, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.shopping_06, R.string.add_sho_06,
-                R.string.pho_sho_06, R.string.web_sho_06, R.drawable.shopping_006));
+                R.string.pho_sho_06, R.string.web_sho_06, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.shopping_07, R.string.add_sho_07,
-                R.string.pho_sho_07, R.string.web_sho_07, R.drawable.shopping_007));
+                R.string.pho_sho_07, R.string.web_sho_07, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.shopping_08, R.string.add_sho_08,
-                R.string.pho_sho_08, R.string.web_sho_08, R.drawable.shopping_008));
+                R.string.pho_sho_08, R.string.web_sho_08, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.shopping_09, R.string.add_sho_09,
-                R.string.pho_sho_09, R.string.web_sho_09, R.drawable.shopping_009));
+                R.string.pho_sho_09, R.string.web_sho_09, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.shopping_10, R.string.add_sho_10,
-                R.string.pho_sho_10, R.string.web_sho_10, R.drawable.shopping_010));
+                R.string.pho_sho_10, R.string.web_sho_10, R.drawable.ph));
 
         // Create an {@link PointOfInterestAdapter}, whose data source is a list of {@link PointOfInterest}s. The
         // adapter knows how to create list items for each item in the list.
@@ -78,11 +76,11 @@ public class ShoppingFragment extends Fragment {
                 int currentPhone = Poi.getPointOfInterestPhone();
                 int currentWebsite = Poi.getPointOfInterestWeb();
                 int currentImage = Poi.getImageResourceId();
-                poiIntent.putExtra("curName", currentName);
-                poiIntent.putExtra("curAddress", currentAddress);
-                poiIntent.putExtra("curPhone", currentPhone);
-                poiIntent.putExtra("curWebsite", currentWebsite);
-                poiIntent.putExtra("curImage", currentImage);
+                poiIntent.putExtra(getString(R.string.cName), currentName);
+                poiIntent.putExtra(getString(R.string.cAddress), currentAddress);
+                poiIntent.putExtra(getString(R.string.cPhone), currentPhone);
+                poiIntent.putExtra(getString(R.string.cWeb), currentWebsite);
+                poiIntent.putExtra(getString(R.string.cImg), currentImage);
                 // Start the new activity
                 startActivity(poiIntent);
             }

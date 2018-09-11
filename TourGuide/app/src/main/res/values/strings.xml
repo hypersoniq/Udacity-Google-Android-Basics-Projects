@@ -344,5 +344,10 @@
     <string name="website">Website</string>
     <string name="business_card">Business Card</string>
     <string name="back_to_list">Back to List</string>
+    <string name="cName">curName</string>
+    <string name="cAddress">curAddress</string>
+    <string name="cPhone">curPhone</string>
+    <string name="cWeb">curWebsite</string>
+    <string name="cImg">curImage</string>
 
 </resources>

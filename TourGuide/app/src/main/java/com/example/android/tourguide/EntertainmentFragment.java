@@ -9,8 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
-
 import java.util.ArrayList;
 
 /**
@@ -30,21 +28,21 @@ public class EntertainmentFragment extends Fragment {
         // Create a list of points of interest for this category
         final ArrayList<PointOfInterest> pointsOfInterest = new ArrayList<PointOfInterest>();
         pointsOfInterest.add(new PointOfInterest(R.string.entertainment_01, R.string.add_ent_01,
-                R.string.pho_ent_01, R.string.web_ent_01, R.drawable.entertainment_001));
+                R.string.pho_ent_01, R.string.web_ent_01, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.entertainment_02, R.string.add_ent_02,
-                R.string.pho_ent_02, R.string.web_ent_02, R.drawable.entertainment_002));
+                R.string.pho_ent_02, R.string.web_ent_02, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.entertainment_03, R.string.add_ent_03,
-                R.string.pho_ent_03, R.string.web_ent_03, R.drawable.entertainment_003));
+                R.string.pho_ent_03, R.string.web_ent_03, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.entertainment_04, R.string.add_ent_04,
-                R.string.pho_ent_04, R.string.web_ent_04, R.drawable.entertainment_004));
+                R.string.pho_ent_04, R.string.web_ent_04, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.entertainment_05, R.string.add_ent_05,
-                R.string.pho_ent_05, R.string.web_ent_05, R.drawable.entertainment_005));
+                R.string.pho_ent_05, R.string.web_ent_05, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.entertainment_06, R.string.add_ent_06,
-                R.string.pho_ent_06, R.string.web_ent_06, R.drawable.entertainment_006));
+                R.string.pho_ent_06, R.string.web_ent_06, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.entertainment_07, R.string.add_ent_07,
-                R.string.pho_ent_07, R.string.web_ent_07, R.drawable.entertainment_007));
+                R.string.pho_ent_07, R.string.web_ent_07, R.drawable.ph));
         pointsOfInterest.add(new PointOfInterest(R.string.entertainment_08, R.string.add_ent_08,
-                R.string.pho_ent_08, R.string.web_ent_08, R.drawable.entertainment_008));
+                R.string.pho_ent_08, R.string.web_ent_08, R.drawable.ph));
 
         // Create an {@link PointOfInterestAdapter}, whose data source is a list of {@link PointOfInterest}s. The
         // adapter knows how to create list items for each item in the list.
@@ -74,11 +72,11 @@ public class EntertainmentFragment extends Fragment {
                 int currentPhone = Poi.getPointOfInterestPhone();
                 int currentWebsite = Poi.getPointOfInterestWeb();
                 int currentImage = Poi.getImageResourceId();
-                poiIntent.putExtra("curName", currentName);
-                poiIntent.putExtra("curAddress", currentAddress);
-                poiIntent.putExtra("curPhone", currentPhone);
-                poiIntent.putExtra("curWebsite", currentWebsite);
-                poiIntent.putExtra("curImage", currentImage);
+                poiIntent.putExtra(getString(R.string.cName), currentName);
+                poiIntent.putExtra(getString(R.string.cAddress), currentAddress);
+                poiIntent.putExtra(getString(R.string.cPhone), currentPhone);
+                poiIntent.putExtra(getString(R.string.cWeb), currentWebsite);
+                poiIntent.putExtra(getString(R.string.cImg), currentImage);
                 // Start the new activity
                 startActivity(poiIntent);
             }
