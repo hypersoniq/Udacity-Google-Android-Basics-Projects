@@ -2,4 +2,9 @@
 <resources>
     <!-- Height of each list item -->
     <dimen name="list_item_height">88dp</dimen>
+    <dimen name="five_dips">5dp</dimen>
+    <dimen name="fifteen_sp">15sp</dimen>
+    <dimen name="ten_dips">10dp</dimen>
+    <dimen name="twenty_sp">20sp</dimen>
+    <dimen name="sixteen_dips">16dp</dimen>
 </resources>

@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:baselineAligned="false"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context="com.example.android.tourguide.MainActivity">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight=".5">
 
         <ImageView
@@ -22,8 +22,8 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
         android:layout_weight=".5"
         android:background="@android:color/white">
 
@@ -62,7 +62,7 @@
             android:autoLink="phone"
             android:clickable="true"
             android:gravity="center"
-            android:padding="@dimen/ten_dips"
+            android:padding="10dp"
             android:text="@string/phone"
             android:textColor="@android:color/black"
             android:textColorLink="@android:color/black"
@@ -81,7 +81,7 @@
             android:text="@string/website"
             android:textColor="@android:color/black"
             android:textColorLink="#1111AA"
-            android:textSize="15sp" />
+            android:textSize="@dimen/fifteen_sp" />
 
         <Button
             android:id="@+id/toList"

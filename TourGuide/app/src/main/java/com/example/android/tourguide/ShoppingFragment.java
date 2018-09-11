@@ -1,6 +1,7 @@
 package com.example.android.tourguide;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -17,11 +18,9 @@ import java.util.ArrayList;
  */
 public class ShoppingFragment extends Fragment {
 
-
     public ShoppingFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -51,8 +50,7 @@ public class ShoppingFragment extends Fragment {
         pointsOfInterest.add(new PointOfInterest(R.string.shopping_10, R.string.add_sho_10,
                 R.string.pho_sho_10, R.string.web_sho_10, R.drawable.shopping_010));
 
-
-        // Create an {@link WordAdapter}, whose data source is a list of {@link PointOfInterest}s. The
+        // Create an {@link PointOfInterestAdapter}, whose data source is a list of {@link PointOfInterest}s. The
         // adapter knows how to create list items for each item in the list.
         PointOfInterestAdapter adapter = new PointOfInterestAdapter(getActivity(), pointsOfInterest, R.color.category_shopping);
 
@@ -72,9 +70,21 @@ public class ShoppingFragment extends Fragment {
 
                 // Get the {@link PointOfInterest} object at the given position the user clicked on
                 PointOfInterest Poi = pointsOfInterest.get(position);
-
-                // package information to be sent via intent
-
+                //Open the Now Playing class via an intent
+                Intent poiIntent = new Intent(getActivity(), com.example.android.tourguide.BusinessCardActivity.class);
+                //Pass the Song information
+                int currentName = Poi.getPointOfInterestName();
+                int currentAddress = Poi.getPointOfInterestAddress();
+                int currentPhone = Poi.getPointOfInterestPhone();
+                int currentWebsite = Poi.getPointOfInterestWeb();
+                int currentImage = Poi.getImageResourceId();
+                poiIntent.putExtra("curName", currentName);
+                poiIntent.putExtra("curAddress", currentAddress);
+                poiIntent.putExtra("curPhone", currentPhone);
+                poiIntent.putExtra("curWebsite", currentWebsite);
+                poiIntent.putExtra("curImage", currentImage);
+                // Start the new activity
+                startActivity(poiIntent);
             }
         });
 
