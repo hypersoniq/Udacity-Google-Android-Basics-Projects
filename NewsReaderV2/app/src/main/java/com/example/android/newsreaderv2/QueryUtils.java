@@ -1,4 +1,4 @@
-package com.example.android.newsreaderv1;
+package com.example.android.newsreaderv2;
 
 import android.text.TextUtils;
 import android.util.Log;
@@ -161,7 +161,9 @@ public final class QueryUtils {
             // To keep it manageable, the loop will ensure that no more than 15 articles
             // are loaded into the list.
             int arrayTotal = newsArray.length();
-            // Extract info for each article in the array
+            if (newsArray.length() < 15) {
+                arrayTotal = newsArray.length();
+            }
             for (int i = 0; i < arrayTotal; i++) {
 
                 // Get a single earthquake at position i within the list of earthquakes
@@ -173,17 +175,6 @@ public final class QueryUtils {
                 // Extract the value for the key called "webTitle"
                 String headline = currentArticle.getString("webTitle");
 
-                // Extract Author from the tags array
-                JSONArray tagsArr = currentArticle.getJSONArray("tags");
-                String author;
-                // Find an author in the tags array
-                if (tagsArr.length() > 0) {
-                    JSONObject currentAuthor = tagsArr.getJSONObject(0);
-                    author = currentAuthor.optString("webTitle");
-                } else {
-                    author = "No author information found";
-                }
-
                 // Extract the value for the key called "webPublicationDate"
                 String date = currentArticle.getString("webPublicationDate");
 
@@ -192,9 +183,9 @@ public final class QueryUtils {
 
                 // Create a new {@link Earthquake} object with the magnitude, location, time,
                 // and url from the JSON response.
-                News article = new News(section, headline, author, date, url);
+                News article = new News(section, headline, date, url);
 
-                // Add the new {@link News} article to the list of news articles.
+                // Add the new {@link Earthquake} to the list of earthquakes.
                 articles.add(article);
             }
 
@@ -210,4 +201,5 @@ public final class QueryUtils {
     }
 
 }
+
 

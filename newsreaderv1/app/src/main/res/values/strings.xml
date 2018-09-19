@@ -8,4 +8,5 @@
     <string name="headline_placeholder">Headline goes here...</string>
     <string name="date_placeholder">Mar 6, 2010</string>
     <string name="section_ph">Section</string>
+    <string name="author_goes_here">Author goes here</string>
 </resources>

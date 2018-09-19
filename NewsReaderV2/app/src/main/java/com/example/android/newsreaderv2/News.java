@@ -1,4 +1,4 @@
-package com.example.android.newsreaderv1;
+package com.example.android.newsreaderv2;
 
 /**
  * An {@link News} object contains information related to a single news article.
@@ -16,11 +16,6 @@ public class News {
     private String mHeadline;
 
     /**
-     * Author(s) of the article
-     */
-    private String mAuthor;
-
-    /**
      * Date of the article's publication
      */
     private String mDate;
@@ -35,14 +30,12 @@ public class News {
      *
      * @param section  is the section where the story can be found
      * @param headline is the headline of the story
-     * @param author   is the author(s) of the story
      * @param date     is the date of publication of the article
      * @param url      is the website URL to read the article
      */
-    public News(String section, String headline, String author, String date, String url) {
+    public News(String section, String headline, String date, String url) {
         mSection = section;
         mHeadline = headline;
-        mAuthor = author;
         mDate = date;
         mUrl = url;
     }
@@ -52,13 +45,6 @@ public class News {
      */
     public String getSection() {
         return mSection;
-    }
-
-    /**
-     * Returns the author(s) of the article.
-     */
-    public String getAuthor() {
-        return mAuthor;
     }
 
     /**
@@ -82,3 +68,4 @@ public class News {
         return mUrl;
     }
 }
+

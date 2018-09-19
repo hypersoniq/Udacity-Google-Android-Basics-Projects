@@ -1,4 +1,4 @@
-package com.example.android.newsreaderv1;
+package com.example.android.newsreaderv2;
 
 import android.app.LoaderManager;
 import android.app.LoaderManager.LoaderCallbacks;
@@ -25,7 +25,7 @@ public class NewsActivity extends AppCompatActivity
      * URL for news article data from the Guardian dataset
      */
     private static final String GUARDIAN_REQUEST_URL =
-            "https://content.guardianapis.com/search?q=fake%20news&show-tags=contributor&page-size=15&api-key=test";
+            "https://content.guardianapis.com/search?q=fake%20news&api-key=test";
 
     /**
      * Constant value for the news loader ID.
@@ -137,5 +137,4 @@ public class NewsActivity extends AppCompatActivity
         mAdapter.clear();
     }
 }
-
 
