@@ -59,6 +59,13 @@ public class NewsAdapter extends ArrayAdapter<News> {
         // Display the headline of the current article in that TextView
         headlineView.setText(articleHeadline);
 
+        // Get the original headline string from the News object,
+        String articleAuthor = "By: " + currentArticle.getAuthor();
+        // Find the TextView with view ID headline
+        TextView authorView = (TextView) listItemView.findViewById(R.id.author);
+        // Display the headline of the current article in that TextView
+        authorView.setText(articleAuthor);
+
         // Create a new Date object from the publication date of the article
         String dateObject = currentArticle.getDate();
         String[] dateArray = dateObject.split("T", 2);

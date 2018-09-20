@@ -175,6 +175,17 @@ public final class QueryUtils {
                 // Extract the value for the key called "webTitle"
                 String headline = currentArticle.getString("webTitle");
 
+                // Extract Author from the tags array
+                JSONArray tagsArr = currentArticle.getJSONArray("tags");
+                String author;
+                // Find an author in the tags array
+                if (tagsArr.length() > 0) {
+                    JSONObject currentAuthor = tagsArr.getJSONObject(0);
+                    author = currentAuthor.optString("webTitle");
+                } else {
+                    author = "No author information found";
+                }
+
                 // Extract the value for the key called "webPublicationDate"
                 String date = currentArticle.getString("webPublicationDate");
 
@@ -183,7 +194,7 @@ public final class QueryUtils {
 
                 // Create a new {@link Earthquake} object with the magnitude, location, time,
                 // and url from the JSON response.
-                News article = new News(section, headline, date, url);
+                News article = new News(section, headline, author, date, url);
 
                 // Add the new {@link Earthquake} to the list of earthquakes.
                 articles.add(article);
