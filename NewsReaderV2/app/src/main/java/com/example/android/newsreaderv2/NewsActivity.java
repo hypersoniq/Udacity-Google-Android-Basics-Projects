@@ -12,6 +12,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -27,10 +28,15 @@ public class NewsActivity extends AppCompatActivity
         SharedPreferences.OnSharedPreferenceChangeListener {
 
     /**
+     * Tag for the log messages
+     */
+    private static final String LOG_TAG = QueryUtils.class.getSimpleName();
+
+    /**
      * URL for news article data from the Guardian dataset
      */
     private static final String GUARDIAN_REQUEST_URL =
-            "https://content.guardianapis.com/search?";
+            "https://content.guardianapis.com/search?q=fake%20news&show-tags=contributor&api-key=test";
 
     /**
      * Constant value for the news loader ID.
@@ -114,7 +120,7 @@ public class NewsActivity extends AppCompatActivity
     @Override
     public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
         if (key.equals(getString(R.string.settings_number_of_articles_key)) ||
-                key.equals(getString(R.string.settings_order_by_key))){
+                key.equals(getString(R.string.settings_order_by_key))) {
             // Clear the ListView as a new query will be kicked off
             mAdapter.clear();
 
@@ -149,13 +155,10 @@ public class NewsActivity extends AppCompatActivity
 
         // Append query parameters to create the final URI
         uriBuilder.appendQueryParameter("order-by", orderBy);
-        uriBuilder.appendQueryParameter("show-tags", "contributor");
         uriBuilder.appendQueryParameter("page-size", numArticles);
-        uriBuilder.appendQueryParameter("q", "fake%20news");
-        uriBuilder.appendQueryParameter("api-key", "test");
 
         // Create a new loader for the given URL
-        return new NewsLoader(this, GUARDIAN_REQUEST_URL);
+        return new NewsLoader(this, uriBuilder.toString());
     }
 
     @Override
