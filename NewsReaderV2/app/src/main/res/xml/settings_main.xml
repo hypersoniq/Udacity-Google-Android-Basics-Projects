@@ -17,4 +17,11 @@
         android:selectAllOnFocus="true"
         android:title="@string/settings_number_of_articles_label" />
 
+    <EditTextPreference
+        android:defaultValue="@string/settings_choose_topic_default"
+        android:inputType="textAutoCorrect"
+        android:key="@string/settings_choose_topic_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/settings_choose_topic_label" />
+
 </PreferenceScreen>

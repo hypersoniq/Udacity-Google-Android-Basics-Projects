@@ -36,7 +36,7 @@ public class NewsActivity extends AppCompatActivity
      * URL for news article data from the Guardian dataset
      */
     private static final String GUARDIAN_REQUEST_URL =
-            "https://content.guardianapis.com/search?q=fake%20news&show-tags=contributor&api-key=test";
+            "https://content.guardianapis.com/search?&show-tags=contributor&api-key=test";
 
     /**
      * Constant value for the news loader ID.
@@ -146,14 +146,18 @@ public class NewsActivity extends AppCompatActivity
 
         String orderBy = sharedPrefs.getString(
                 getString(R.string.settings_order_by_key),
-                getString(R.string.settings_order_by_default)
-        );
+                getString(R.string.settings_order_by_default));
+
+        String chosenTopic = sharedPrefs.getString(
+                getString(R.string.settings_choose_topic_key),
+                        getString(R.string.settings_choose_topic_default));
 
         // Parse the base URI
         Uri baseUri = Uri.parse(GUARDIAN_REQUEST_URL);
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
         // Append query parameters to create the final URI
+        uriBuilder.appendQueryParameter("q", chosenTopic);
         uriBuilder.appendQueryParameter("order-by", orderBy);
         uriBuilder.appendQueryParameter("page-size", numArticles);
 

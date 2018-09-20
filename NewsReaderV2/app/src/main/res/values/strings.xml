@@ -24,6 +24,14 @@
     <string name="settings_order_by_key" translatable="false">order-by</string>
     <string name="settings_order_by_default" translatable="false">relevance</string>
 
+    <!-- Strings For choose topic [CHAR LIMIT=30] -->
+    <string name="settings_choose_topic_label">Choose Topic</string>
+    <string name="settings_choose_topic_key" translatable="false">q</string>
+    <string name="settings_choose_topic_default" translatable="false">fake news</string>
+
+    <!-- Label for choose topic option [CHAR LIMIT=20] -->
+    <string name="settings_choose_topic_value" translatable="false">fake news</string>
+
     <!-- Label for order-by relevance option [CHAR LIMIT=20] -->
     <string name="settings_order_by_relevance_label">Relevance</string>
     <string name="settings_order_by_relevance_value" translatable="false">relevance</string>
