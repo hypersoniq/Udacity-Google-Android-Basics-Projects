@@ -17,7 +17,7 @@ public class BookDBHelper extends SQLiteOpenHelper {
     /**
      * Database version. If you change the database schema, you must increment the database version.
      */
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 1;
 
     /**
      * Constructs a new instance of {@link BookDBHelper}.
