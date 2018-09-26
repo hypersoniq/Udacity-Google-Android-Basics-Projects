@@ -51,7 +51,8 @@ public class InventoryActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        displayDatabaseInfo();
+        insertBook(); // This puts a book into the database per the project requirements
+        displayDatabaseInfo(); // This queries the database to show the book that was added
     }
 
     /**
