@@ -120,7 +120,7 @@ public class EditorActivity extends AppCompatActivity implements
         // Use trim to eliminate leading or trailing white space
         String titleString = mTitleEditText.getText().toString().trim();
         String priceString = mPriceEditText.getText().toString().trim();
-        float price = Float.parseFloat(priceString);
+        double price = Double.parseDouble(priceString);
         String quantityString = mQuantityEditText.getText().toString().trim();
         int quantity = Integer.parseInt(quantityString);
         String supplierString = mSupplierNameEditText.getText().toString().trim();
@@ -315,14 +315,14 @@ public class EditorActivity extends AppCompatActivity implements
 
             // Extract out the value from the Cursor for the given column index
             String title = cursor.getString(titleColumnIndex);
-            float price = cursor.getFloat(priceColumnIndex);
+            double price = cursor.getFloat(priceColumnIndex);
             int quantity = cursor.getInt(quantityColumnIndex);
             String supplier = cursor.getString(supplierColumnIndex);
             String telephone = cursor.getString(telephoneColumnIndex);
 
             // Update the views on the screen with the values from the database
             mTitleEditText.setText(title);
-            mPriceEditText.setText(Float.toString(price));
+            mPriceEditText.setText(Double.toString(price));
             mQuantityEditText.setText(Integer.toString(quantity));
             mSupplierNameEditText.setText(supplier);
             mSupplierPhoneNumberEditText.setText(telephone);
