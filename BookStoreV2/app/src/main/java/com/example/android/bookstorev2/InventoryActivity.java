@@ -21,6 +21,8 @@ import android.widget.ListView;
 import com.example.android.bookstorev2.data.BookContract.BookEntry;
 
 /**
+ * The Book Store Version 2 app. Code borrows heavily from the examples of the Pets app
+ * provided by Udacity in the relevant lessons before this project.
  * Displays list of books that were entered and stored in the app.
  */
 public class InventoryActivity extends AppCompatActivity implements
