@@ -17,6 +17,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -75,15 +76,27 @@ public class EditorActivity extends AppCompatActivity implements
         Intent intent = getIntent();
         mCurrentBookUri = intent.getData();
 
+        // Create variables for the buttons, for they will be visible in edit mode and gone in add mode
+        Button incrementBtn = (Button) findViewById(R.id.increment_btn);
+        Button decrementBtn = (Button) findViewById(R.id.decrement_btn);
+        Button reorderBtn = (Button) findViewById(R.id.reorder_btn);
+        Button deleteBtn = (Button) findViewById(R.id.delete_btn);
+
         // If the intent DOES NOT contain a book content URI, then we know that we are
         // creating a new book.
         if (mCurrentBookUri == null) {
-            // This is a new pet, so change the app bar to say "Add a Book"
+            // This is a new book, so change the app bar to say "Add a Book"
             setTitle(getString(R.string.editor_activity_title_new_book));
 
             // Invalidate the options menu, so the "Delete" menu option can be hidden.
             // (It doesn't make sense to delete a book that hasn't been created yet.)
             invalidateOptionsMenu();
+
+            // hide the buttons that are intended for editing an existing book
+            incrementBtn.setVisibility(View.GONE);
+            decrementBtn.setVisibility(View.GONE);
+            reorderBtn.setVisibility(View.GONE);
+            deleteBtn.setVisibility(View.GONE);
         } else {
             // Otherwise this is an existing book, so change app bar to say "Edit Book"
             setTitle(getString(R.string.editor_activity_title_edit_book));

@@ -40,7 +40,7 @@ public class BookDbHelper extends SQLiteOpenHelper {
                 + BookEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + BookEntry.COLUMN_BOOK_TITLE + " TEXT NOT NULL, "
                 + BookEntry.COLUMN_BOOK_PRICE + " REAL, "
-                + BookEntry.COLUMN_BOOK_QUANTITY + " INTEGER, "
+                + BookEntry.COLUMN_BOOK_QUANTITY + " INTEGER NOT NULL DEFAULT 1, "
                 + BookEntry.COLUMN_SUPPLIER_NAME + " TEXT, "
                 + BookEntry.COLUMN_SUPPLIER_PHONE_NUMBER + " TEXT);";
 
