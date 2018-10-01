@@ -78,7 +78,13 @@
 
     <!-- Text hint for the book supplier telephone number [CHAR LIMIT=30] -->
     <string name="hint_supplier_phone">Supplier Telephone</string>
+
     <string name="reorder">Reorder</string>
     <string name="decrement">-</string>
     <string name="increment">+</string>
+    <string name="price_prefix">$</string>
+    <string name="quantity_prefix">Qty: </string>
+    <string name="telephone_prefix">Tel: </string>
+    <string name="button_placeholder_text">Sale</string>
+    <string name="sell_one">Sell 1</string>
 </resources>

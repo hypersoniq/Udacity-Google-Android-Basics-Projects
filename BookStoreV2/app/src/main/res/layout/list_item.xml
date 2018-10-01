@@ -41,7 +41,7 @@
 
     <Button
         android:id="@+id/sale_Btn"
-        android:text="Sell 1"
+        tools:text="@string/button_placeholder_text"
         android:layout_alignParentRight="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

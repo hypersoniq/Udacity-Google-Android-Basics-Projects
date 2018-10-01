@@ -1,5 +1,6 @@
 package com.example.android.bookstorev2;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.view.LayoutInflater;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CursorAdapter;
 import android.widget.TextView;
+import android.net.Uri;
 
 import com.example.android.bookstorev2.data.BookContract.BookEntry;
 
@@ -55,11 +57,14 @@ public class BookCursorAdapter extends CursorAdapter {
      *                correct row.
      */
     @Override
-    public void bindView(View view, Context context, Cursor cursor) {
+    public void bindView(View view, final Context context, final Cursor cursor) {
+        // Create a ViewHolder to make updates with the sale button
         // Find individual views that we want to modify in the list item layout
         TextView titleTextView = (TextView) view.findViewById(R.id.title);
         TextView priceTextView = (TextView) view.findViewById(R.id.price);
         TextView quantityTextView = (TextView) view.findViewById(R.id.quantity);
+        final Button sellOne = (Button) view.findViewById(R.id.sale_Btn);
+        sellOne.setText(R.string.sell_one);
 
         // Find the columns of book attributes that we're interested in
         int titleColumnIndex = cursor.getColumnIndex(BookEntry.COLUMN_BOOK_TITLE);
@@ -69,12 +74,43 @@ public class BookCursorAdapter extends CursorAdapter {
         // Read the book attributes from the Cursor for the current book
         String bookTitle = cursor.getString(titleColumnIndex);
         String bookPrice = cursor.getString(priceColumnIndex);
-        String bookQuantity = cursor.getString(quantityColumnIndex);
+        final String bookQuantity = cursor.getString(quantityColumnIndex);
 
         // Update the TextViews with the attributes for the current book
         titleTextView.setText(bookTitle);
-        priceTextView.setText("$" + bookPrice);
-        quantityTextView.setText("Qty: " + bookQuantity);
+        priceTextView.setText(context.getString(R.string.price_prefix) + bookPrice);
+        quantityTextView.setText(context.getString(R.string.quantity_prefix) + bookQuantity);
+
+        sellOne.setOnClickListener(new View.OnClickListener() {
+            int id = cursor.getInt(cursor.getColumnIndex(BookEntry._ID));
+            Uri content = Uri.withAppendedPath(BookEntry.CONTENT_URI, Integer.toString(id));
+
+            @Override
+            public void onClick(View v) {
+                // Set enabled in case quantity was updated
+                sellOne.setEnabled(true);
+                // Extract the current quantity
+                String extractQty = bookQuantity;
+                int quantity = Integer.parseInt(extractQty);
+                if (quantity == 0) {
+                    // Disable the sale_BTN until quantity is added
+                    // to prevent a negative quantity from being obtained
+                    sellOne.setEnabled(false);
+                } else {
+                    // decrement the current quantity by one.
+                    quantity--;
+                    // Write the new quantity to the database
+                    ContentValues values = new ContentValues();
+                    values.put(BookEntry.COLUMN_BOOK_QUANTITY, quantity);
+                    // Call the ContentResolver to update the book at the given content URI.
+                    context.getContentResolver().update(content, values, null, null);
+                    if (quantity == 0) {
+                        // If the updated quantity is 0, take away the ability to decrement
+                        sellOne.setEnabled(false);
+                    }
+                }
+            }
+        });
     }
 }
 

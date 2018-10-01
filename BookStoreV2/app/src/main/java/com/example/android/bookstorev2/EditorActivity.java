@@ -1,5 +1,6 @@
 package com.example.android.bookstorev2;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.app.LoaderManager;
 import android.content.ContentValues;
@@ -7,10 +8,13 @@ import android.content.CursorLoader;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.Loader;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.NavUtils;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.Menu;
@@ -30,28 +34,49 @@ import com.example.android.bookstorev2.data.BookContract.BookEntry;
 public class EditorActivity extends AppCompatActivity implements
         LoaderManager.LoaderCallbacks<Cursor> {
 
-    /** Identifier for the book data loader */
+    /**
+     * Identifier for the book data loader
+     */
     private static final int EXISTING_BOOK_LOADER = 0;
 
-    /** Content URI for the existing book (null if it's a new book) */
+    /**
+     * value for
+     */
+    private static final int REQUEST_CALL_PERMISSION = 1;
+
+    /**
+     * Content URI for the existing book (null if it's a new book)
+     */
     private Uri mCurrentBookUri;
 
-    /** EditText field to enter the book's title */
+    /**
+     * EditText field to enter the book's title
+     */
     private EditText mTitleEditText;
 
-    /** EditText field to enter the book's price */
+    /**
+     * EditText field to enter the book's price
+     */
     private EditText mPriceEditText;
 
-    /** EditText field to enter the quantity of the book in inventory */
+    /**
+     * EditText field to enter the quantity of the book in inventory
+     */
     private EditText mQuantityEditText;
 
-    /** EditText field to enter the book supplier's name */
+    /**
+     * EditText field to enter the book supplier's name
+     */
     private EditText mSupplierNameEditText;
 
-    /** EditText field to enter the book supplier's phone number */
+    /**
+     * EditText field to enter the book supplier's phone number
+     */
     private EditText mSupplierPhoneNumberEditText;
 
-    /** Boolean flag that keeps track of whether the book has been edited (true) or not (false) */
+    /**
+     * Boolean flag that keeps track of whether the book has been edited (true) or not (false)
+     */
     private boolean mBookHasChanged = false;
 
     /**
@@ -77,10 +102,10 @@ public class EditorActivity extends AppCompatActivity implements
         mCurrentBookUri = intent.getData();
 
         // Create variables for the buttons, for they will be visible in edit mode and gone in add mode
-        Button incrementBtn = (Button) findViewById(R.id.increment_btn);
-        Button decrementBtn = (Button) findViewById(R.id.decrement_btn);
-        Button reorderBtn = (Button) findViewById(R.id.reorder_btn);
-        Button deleteBtn = (Button) findViewById(R.id.delete_btn);
+        final Button incrementBtn = (Button) findViewById(R.id.increment_btn);
+        final Button decrementBtn = (Button) findViewById(R.id.decrement_btn);
+        final Button reorderBtn = (Button) findViewById(R.id.reorder_btn);
+        final Button deleteBtn = (Button) findViewById(R.id.delete_btn);
 
         // If the intent DOES NOT contain a book content URI, then we know that we are
         // creating a new book.
@@ -121,9 +146,78 @@ public class EditorActivity extends AppCompatActivity implements
         mQuantityEditText.setOnTouchListener(mTouchListener);
         mSupplierNameEditText.setOnTouchListener(mTouchListener);
         mSupplierPhoneNumberEditText.setOnTouchListener(mTouchListener);
+
+        // Create an onclick listener for the decrementBtn
+        decrementBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Extract the current quantity
+                String extractQty = mQuantityEditText.getText().toString().trim();
+                int quantity = Integer.parseInt(extractQty);
+                if (quantity == 0) {
+                    // Disable the decrementBTN until the incrementBTN is clicked
+                    // to prevent a negative quantity from being obtained via the decrementBtn
+                    decrementBtn.setEnabled(false);
+                } else {
+                    // decrement the current quantity by one.
+                    quantity--;
+                    // Write the new quantity to the database
+                    ContentValues values = new ContentValues();
+                    values.put(BookEntry.COLUMN_BOOK_QUANTITY, quantity);
+                    // Call the ContentResolver to update the book at the given content URI.
+                    getContentResolver().update(mCurrentBookUri, values, null, null);
+                    if (quantity == 0) {
+                        // If the updated quantity is 0, take away the ability to decrement
+                        decrementBtn.setEnabled(false);
+                    }
+                }
+            }
+        });
+
+        // Create an onclick listener for the incrementBtn
+        incrementBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Extract the current quantity
+                String extractQty = mQuantityEditText.getText().toString().trim();
+                int quantity = Integer.parseInt(extractQty);
+                // Increment the current quantity by one.
+                quantity++;
+                // Write the new quantity to the database
+                ContentValues values = new ContentValues();
+                values.put(BookEntry.COLUMN_BOOK_QUANTITY, quantity);
+                // Call the ContentResolver to update the book at the given content URI.
+                getContentResolver().update(mCurrentBookUri, values, null, null);
+                // now that we have a quantity, it makes sense to
+                // enable the decrementBtn
+                decrementBtn.setEnabled(true);
+            }
+        });
+
+        // Create an onclick listener for the reorderBtn
+        reorderBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Extract the current quantity
+                String extractPhone = mSupplierPhoneNumberEditText.getText().toString().trim();
+                if (ContextCompat.checkSelfPermission(EditorActivity.this, Manifest.permission.CALL_PHONE)
+                        != PackageManager.PERMISSION_GRANTED) {
+                    ActivityCompat.requestPermissions(EditorActivity.this, new String[]{Manifest.permission.CALL_PHONE},
+                            REQUEST_CALL_PERMISSION);
+                } else {
+                    startActivity(new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + extractPhone)));
+                }
+            }
+        });
+
+        // Create an onclick listener for the deleteBtn
+        deleteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                deleteBook();
+            }
+        });
     }
-
-
 
     /**
      * Get user input from editor and save pet into database.
@@ -298,7 +392,7 @@ public class EditorActivity extends AppCompatActivity implements
                 BookEntry.COLUMN_BOOK_PRICE,
                 BookEntry.COLUMN_BOOK_QUANTITY,
                 BookEntry.COLUMN_SUPPLIER_NAME,
-                BookEntry.COLUMN_SUPPLIER_PHONE_NUMBER };
+                BookEntry.COLUMN_SUPPLIER_PHONE_NUMBER};
 
         // This loader will execute the ContentProvider's query method on a background thread
         return new CursorLoader(this,   // Parent activity context
@@ -328,14 +422,15 @@ public class EditorActivity extends AppCompatActivity implements
 
             // Extract out the value from the Cursor for the given column index
             String title = cursor.getString(titleColumnIndex);
-            double price = cursor.getFloat(priceColumnIndex);
+            double price = cursor.getDouble(priceColumnIndex);
+            String formattedPrice = String.format("%.2f", price);
             int quantity = cursor.getInt(quantityColumnIndex);
             String supplier = cursor.getString(supplierColumnIndex);
             String telephone = cursor.getString(telephoneColumnIndex);
 
             // Update the views on the screen with the values from the database
             mTitleEditText.setText(title);
-            mPriceEditText.setText(Double.toString(price));
+            mPriceEditText.setText(formattedPrice);
             mQuantityEditText.setText(Integer.toString(quantity));
             mSupplierNameEditText.setText(supplier);
             mSupplierPhoneNumberEditText.setText(telephone);
@@ -437,3 +532,4 @@ public class EditorActivity extends AppCompatActivity implements
         finish();
     }
 }
+
