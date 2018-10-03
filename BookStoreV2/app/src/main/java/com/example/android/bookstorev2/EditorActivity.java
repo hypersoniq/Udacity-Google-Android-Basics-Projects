@@ -239,14 +239,6 @@ public class EditorActivity extends AppCompatActivity implements
         int quantity = Integer.parseInt(quantityString);
         String supplierString = mSupplierNameEditText.getText().toString().trim();
         String telephoneString = mSupplierPhoneNumberEditText.getText().toString().trim();
-        // Validate input
-        if (TextUtils.isEmpty(titleString) || TextUtils.isEmpty(priceString) || TextUtils.isEmpty(quantityString) ||
-                TextUtils.isEmpty(supplierString) || TextUtils.isEmpty(telephoneString)){
-            // Display toast message and return to current screen without saving
-            Toast.makeText(this, R.string.all_fields_required,
-                    Toast.LENGTH_LONG).show();
-            return;
-        }
 
         // Check if this is supposed to be a new book
         // and check if all the fields in the editor are blank
@@ -333,6 +325,21 @@ public class EditorActivity extends AppCompatActivity implements
         switch (item.getItemId()) {
             // Respond to a click on the "Save" menu option
             case R.id.action_save:
+                // Read from input fields
+                // Use trim to eliminate leading or trailing white space
+                String titleString = mTitleEditText.getText().toString().trim();
+                String priceString = mPriceEditText.getText().toString().trim();
+                String quantityString = mQuantityEditText.getText().toString().trim();
+                String supplierString = mSupplierNameEditText.getText().toString().trim();
+                String telephoneString = mSupplierPhoneNumberEditText.getText().toString().trim();
+                // validate data and return to screen if any field is blank
+                if (mCurrentBookUri == null && (titleString.isEmpty() || priceString.isEmpty() || quantityString.isEmpty() ||
+                        supplierString.isEmpty() || telephoneString.isEmpty())) {
+                    // Display toast message and return to current screen without saving
+                    Toast.makeText(this, R.string.all_fields_required,
+                            Toast.LENGTH_LONG).show();
+                    return false;
+                }
                 // Save book to database
                 saveBook();
                 // Exit activity
