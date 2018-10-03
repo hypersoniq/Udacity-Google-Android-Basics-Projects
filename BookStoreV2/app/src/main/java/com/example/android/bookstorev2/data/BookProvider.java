@@ -185,6 +185,34 @@ public class BookProvider extends ContentProvider {
             }
         }
 
+        if (values.containsKey(BookEntry.COLUMN_BOOK_PRICE)) {
+            String name = values.getAsString(BookEntry.COLUMN_BOOK_PRICE);
+            if (name == null) {
+                throw new IllegalArgumentException("Book requires a price");
+            }
+        }
+
+        if (values.containsKey(BookEntry.COLUMN_BOOK_QUANTITY)) {
+            String name = values.getAsString(BookEntry.COLUMN_BOOK_QUANTITY);
+            if (name == null) {
+                throw new IllegalArgumentException("Book requires a positive quantity");
+            }
+        }
+
+        if (values.containsKey(BookEntry.COLUMN_SUPPLIER_NAME)) {
+            String name = values.getAsString(BookEntry.COLUMN_SUPPLIER_NAME);
+            if (name == null) {
+                throw new IllegalArgumentException("Book requires a supplier name");
+            }
+        }
+
+        if (values.containsKey(BookEntry.COLUMN_SUPPLIER_PHONE_NUMBER)) {
+            String name = values.getAsString(BookEntry.COLUMN_SUPPLIER_PHONE_NUMBER);
+            if (name == null) {
+                throw new IllegalArgumentException("Book requires a supplier phone number");
+            }
+        }
+
         // If there are no values to update, then don't try to update the database
         if (values.size() == 0) {
             return 0;

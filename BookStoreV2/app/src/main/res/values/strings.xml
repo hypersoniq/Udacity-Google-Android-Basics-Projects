@@ -87,4 +87,5 @@
     <string name="telephone_prefix">Tel: </string>
     <string name="button_placeholder_text">Sale</string>
     <string name="sell_one">Sell 1</string>
+    <string name="all_fields_required">Values are REQUIRED for all fields</string>
 </resources>

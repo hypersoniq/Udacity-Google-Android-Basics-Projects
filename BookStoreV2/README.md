@@ -1,4 +1,4 @@
-# submitted for review, Android World!
+# reworking and currently broken, Android World!
 
 This is my ninth and final official project created for the
 [Udacity Android Basics Nanodegree.](https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803 "Udacity Android Basics ND")

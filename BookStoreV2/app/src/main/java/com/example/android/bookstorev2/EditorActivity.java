@@ -200,27 +200,34 @@ public class EditorActivity extends AppCompatActivity implements
             public void onClick(View v) {
                 // Extract the current quantity
                 String extractPhone = mSupplierPhoneNumberEditText.getText().toString().trim();
+                // create intent
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + extractPhone));
+                // check for proper permissions
                 if (ContextCompat.checkSelfPermission(EditorActivity.this, Manifest.permission.CALL_PHONE)
                         != PackageManager.PERMISSION_GRANTED) {
-                    ActivityCompat.requestPermissions(EditorActivity.this, new String[]{Manifest.permission.CALL_PHONE},
-                            REQUEST_CALL_PERMISSION);
+                    ActivityCompat.requestPermissions(EditorActivity.this, new String[]{Manifest.permission.CALL_PHONE}, REQUEST_CALL_PERMISSION);
                 } else {
-                    startActivity(new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + extractPhone)));
+                    //check that device has an app that can handle the intent
+                    if (intent.resolveActivity(getPackageManager()) != null) ;
+                    {
+                        startActivity(intent);
+                    }
                 }
             }
         });
+
 
         // Create an onclick listener for the deleteBtn
         deleteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                deleteBook();
+                showDeleteConfirmationDialog();
             }
         });
     }
 
     /**
-     * Get user input from editor and save pet into database.
+     * Get valid user input from editor and save book into database.
      */
     private void saveBook() {
         // Read from input fields
@@ -232,6 +239,14 @@ public class EditorActivity extends AppCompatActivity implements
         int quantity = Integer.parseInt(quantityString);
         String supplierString = mSupplierNameEditText.getText().toString().trim();
         String telephoneString = mSupplierPhoneNumberEditText.getText().toString().trim();
+        // Validate input
+        if (TextUtils.isEmpty(titleString) || TextUtils.isEmpty(priceString) || TextUtils.isEmpty(quantityString) ||
+                TextUtils.isEmpty(supplierString) || TextUtils.isEmpty(telephoneString)){
+            // Display toast message and return to current screen without saving
+            Toast.makeText(this, R.string.all_fields_required,
+                    Toast.LENGTH_LONG).show();
+            return;
+        }
 
         // Check if this is supposed to be a new book
         // and check if all the fields in the editor are blank
